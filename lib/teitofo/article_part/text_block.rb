@@ -7,6 +7,10 @@ module TeiToFo
 
       attr_reader :fragments
 
+      def fragments?
+        not self.fragments.nil?
+      end
+
       def add_fragment(inline_text)
         self.fragments ||= Array.new
         self.fragments << inline_text
@@ -25,6 +29,7 @@ module TeiToFo
       def add_style(key, value)
         @styles ||= Hash.new
         @styles[key] = value
+        self
       end
 
       def format(formatter)
