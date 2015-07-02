@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+  <!-- layout master -->
+  <fo:layout-master-set>
+    <!-- page specification -->
+    <fo:simple-page-master page-height="297mm" page-width="210mm" margin-top="22mm" margin-bottom="22mm" margin-left="12mm" margin-right="12mm" master-name="article-page">
+      <!-- main body area -->
+      <fo:region-body region-name="xsl-region-body" background-color="green" margin-top="12mm" margin-bottom="12mm"/>
+      <!-- header area -->
+      <fo:region-before region-name="xsl-region-before" extent="25mm"/>
+      <!-- footer area -->
+      <fo:region-after region-name="xsl-refion-after" extent="25mm"/>
+    </fo:simple-page-master>
+  </fo:layout-master-set>
+  <!-- pagination specification -->
+  <fo:page-sequence master-reference="article-page" xml:lang="en">
+    <!-- document title -->
+    <fo:title>PLoS ONE</fo:title>
+    <!-- header definition -->
+    <fo:static-content flow-name="xsl-region-before">
+      <fo:block-container position="absolute">
+        <fo:block>
+          <fo:external-graphic src="logo.png" content-width="38mm"/>
+        </fo:block>
+        <fo:block line-height="3pt">
+          <fo:leader leader-pattern="rule" leader-length.optimum="100%" color="gray" rule-thickness="2pt"/>
+        </fo:block>
+      </fo:block-container>
+    </fo:static-content>
+    <fo:flow flow-name="xsl-region-body">
+      <!-- content -->
+
+      <!--fo:block-container margin-left="25mm" text-align="justify"-->
+      <!--fo:block-container text-align="justify" border-style="solid" border-width="medium"-->
+      <fo:block-container margin-left="25mm" text-align="justify" border-style="solid" border-width="medium">
+      <!--fo:block-container padding-left="25mm" text-align="justify" border-style="solid" border-width="medium"-->
+
+        <!-- front -->
+        <fo:block margin-top="10mm" font-size="10pt" border-style="solid" border-width="medium" padding="10mm" margin-left="-25mm">BIOPHYSICS</fo:block>
+        <!-- article_meta title -->
+
+        <fo:block-container margin-left="0mm">
+
+          <fo:block text-align="start" line-height="24pt" font-size="18pt" font-weight="bold">Mechanisms of adaptation from a multiple to a single step recovery strategy following repeated exposure to forward loss of balance in older adults</fo:block>
+          <!-- authors -->
+          <fo:block text-align="start" line-height="15pt" font-weight="bold" font-size="10pt">
+            <fo:inline>Christopher P. Carty</fo:inline>
+            <fo:inline vertical-align="super" font-size="8pt">1, *</fo:inline>
+            <fo:inline>Neil J. Cronin</fo:inline>
+            <fo:inline vertical-align="super" font-size="8pt">2</fo:inline>
+            <fo:inline>Glen A. Lichtwark</fo:inline>
+            <fo:inline vertical-align="super" font-size="8pt">3</fo:inline>
+            <fo:inline>Peter M. Mills</fo:inline>
+            <fo:inline vertical-align="super" font-size="8pt">1</fo:inline>
+            <fo:inline>Rod S. Barrett</fo:inline>
+            <fo:inline vertical-align="super" font-size="8pt">1</fo:inline>
+          </fo:block>
+        </fo:block-container>
+        <!-- affiliation(s) -->
+        <fo:block text-align="justify" font-size="8pt">
+          <fo:inline font-weight="bold">1</fo:inline>
+          <fo:inline>Centre for Musculoskeletal Research, Griffith Health Institute and School of Physiotherapy and Exercise Science, Griffith University, Gold Coast, Australia</fo:inline>
+          <fo:inline font-weight="bold">2</fo:inline>
+          <fo:inline>Department of Biology of Physical Activity, University of Jyväskylä, Jyväskylä, Finland</fo:inline>
+          <fo:inline font-weight="bold">3</fo:inline>
+          <fo:inline>School of Human Movement Studies, The University of Queensland, Brisbane, Australia</fo:inline>
+        </fo:block>
+        <!-- abstract -->
+        <fo:block margin-top="12mm">
+          <fo:inline line-height="18pt" font-size="14pt">Abstract</fo:inline>
+        </fo:block>
+        <fo:block line-height="normal" font-size="10pt">
+          <fo:block>
+            <fo:inline>When released from an initial, static, forward lean angle and instructed to recover with a single step, some older adults are able to meet the task requirements, whereas others either stumble or fall. The purpose of the present study was to use the concept of margin of stability (MoS) to investigate balance recovery responses in the anterior-posterior direction exhibited by older single steppers, multiple steppers and those that are able to adapt from multiple to single steps following exposure to repeated forward loss of balance. One hundred and fifty-one healthy, community dwelling, older adults, aged 65–80 years, participated in the study. Participants performed four trials of the balance recovery task from each of three initial lean angles. Balance recovery responses in the anterior-posterior direction were quantified at three events; cable release (CR), toe-off (TO) and foot contact (FC), for trials performed at the intermediate lean angle. MoS was computed as the anterior-posterior distance between the forward boundary of the Base of Support (BoS) and the vertical projection of the velocity adjusted centre of mass position (XCoM). Approximately one-third of participants adapted from a multiple to a single step recovery strategy following repeated exposure to the task. MoS at FC for the single and multiple step trials in the adaptation group were intermediate between the exclusively single step group and the exclusively multiple step group, with the single step trials having a significant, 3.7 times higher MoS at FC than the multiple step trials. Consistent with differences between single and multiple steppers, adaptation from multiple to single steps was attributed to an increased BoS at FC, a reduced XCoM at FC and an increased rate of BoS displacement from TO to FC. Adaptations occurred within a single test session and suggest older adults that are close to the threshold of successful recovery can rapidly improve dynamic stability following repeated exposure to a forward loss of balance.</fo:inline>
+          </fo:block>
+        </fo:block>
+        <!-- body -->
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Introduction</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Falls in older adults are a significant public health concern with approximately one in three community dwelling older adults falling each year </fo:inline>
+          <fo:inline>[1]</fo:inline>
+          <fo:inline>. Falls can result in serious injuries, leading to long term disability and in some cases death </fo:inline>
+          <fo:inline>[2]</fo:inline>
+          <fo:inline>. The reasons for the high incidence of falls in older adults are complex and multifaceted </fo:inline>
+          <fo:inline>[3]</fo:inline>
+          <fo:inline>, but may be better understood by examining factors that influence balance recovery capacity in response to a postural perturbation. One experimental approach for studying balance recovery is the tether-release method </fo:inline>
+          <fo:inline>[4]</fo:inline>
+          <fo:inline>, which involves tilting a participant into a static forward lean position via the use of a horizontal tether, that is subsequently released after a random time delay. Using this experimental approach it has been shown that older adults have a lower maximum lean angle from which they can recover with a single step </fo:inline>
+          <fo:inline>[5]</fo:inline>
+          <fo:inline> and are more likely to require multiple steps to recover from a given lean angle than young adults </fo:inline>
+          <fo:inline>[6]</fo:inline>
+          <fo:inline>, </fo:inline>
+          <fo:inline>[7]</fo:inline>
+          <fo:inline>. The tendency to use multiple steps to recover from loss of balance is also predictive of a future fall </fo:inline>
+          <fo:inline>[8]</fo:inline>
+          <fo:inline>, and so it follows that it is important to identify the mechanisms that influence the ability to recover from loss of balance in older adults.</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Older adults have been shown to exhibit adaptive and/or reactive adaptations in their balance recovery behaviour in response to repeated exposure to the balance recovery task </fo:inline>
+          <fo:inline>[9]</fo:inline>
+          <fo:inline>, </fo:inline>
+          <fo:inline>[10]</fo:inline>
+          <fo:inline>, </fo:inline>
+          <fo:inline>[11]</fo:inline>
+          <fo:inline>. Barrett et al. </fo:inline>
+          <fo:inline>[12]</fo:inline>
+          <fo:inline> used the tether-release method to induce forward loss of balance in older adults, and quantified adaptive stepping responses using the concept of margin of stability </fo:inline>
+          <fo:inline>[13]</fo:inline>
+          <fo:inline>. Within the paradigm of margin of stability, an individual can theoretically improve their dynamic stability during recovery from a forward loss of balance by taking longer, faster steps, adopting a posture in which the whole body centre of mass shifted posteriorly and/or reducing anterior centre of mass velocity. Indeed, the margin of stability when the stepping foot touches down is strongly predictive of the recovery strategy employed (i.e., single versus multiple steps) </fo:inline>
+          <fo:inline>[7]</fo:inline>
+          <fo:inline>. Barrett et al. </fo:inline>
+          <fo:inline>[12]</fo:inline>
+          <fo:inline> found that, on repeated exposure to the task within a single balance recovery test session, older adults exhibited improvements in anterior-posterior, but not medial-lateral margin of stability. The primary mechanism underlying the observed improvement in margin of stability at foot contact with repeated task exposure in the study by Barrett et al. </fo:inline>
+          <fo:inline>[12]</fo:inline>
+          <fo:inline> was a reduction in the anterior-posterior position and velocity of the whole body centre of mass. However participants in this study consisted of three main sub-groups: individuals who were able to recover balance with a single step as instructed (i.e., single steppers); individuals who required multiple steps or support from an overhead harness system to recover balance (i.e., multiple steppers); and individuals who were unable to recover with a single step on initial exposure to the task, but learned to recover with a single step in subsequent trials (i.e., mixed steppers). Since Barrett et al. </fo:inline>
+          <fo:inline>[12]</fo:inline>
+          <fo:inline> did not attempt to differentiate between subgroups within their study on the basis of the recovery strategy employed, it remains possible that subgroups within their participant sample exhibited differences in the nature and extent of their adaptive responses. The mechanisms by which older adults that can rapidly learn to recover balance are currently unknown, and if identified, could provide insight into ways in which balance recovery of older adults could be improved more generally.</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>The purpose of the present study was to use the concept of margin of stability to investigate balance recovery responses in the anterior-posterior direction exhibited by older single, multiple and mixed steppers following exposure to repeated forward loss of balance. It was hypothesised that the margin of stability would be improved in trials where mixed steppers were able to recover with single compared to multiple steps and that the mechanism of improvement in margin of stability exhibited by the mixed group would be consistent with the mechanisms that differentiate the exclusively single from the exclusively multiple step groups.</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Methods</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Participants</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>One hundred and fifty-one healthy, community dwelling older adults (79 male, 72 female), aged 65–80 years, were recruited at random from the local electoral roll. The mean (±1 SD) age, height and mass of participants were 71.6±4.6 years, 1.67±0.09 m and 75.8±12.8 kg, respectively. Individuals that reported neurological, metabolic, cardio-pulmonary, musculoskeletal or uncorrected visual impairment were excluded. Ethics approval was obtained from the Griffith University Human Research Ethics Committee. Written informed consent was obtained from participants prior to testing and methodology was conducted in accordance with the Declaration of Helsinki.</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Balance recovery protocol</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>The balance recovery protocol was conducted as described previously </fo:inline>
+          <fo:inline>[12]</fo:inline>
+          <fo:inline>. Participants stood barefoot with their feet shoulder-width apart in a neutral posture and were tilted forward, with their feet flat on the ground, until 15, 20 or 25% of body weight (BW) was recorded on a load cell (S1W1kN, XTRAN, Australia) placed in series with an inextensible cable. One end of the cable was attached to a safety harness worn by the participant at the level of their sacrum and the other end was attached to a rigid metal frame located behind the participant. An electric winch mounted on the frame was used to adjust the length of the cable. Care was taken to ensure the cable was parallel with the ground and that participants kept their head, trunk and extremities aligned prior to cable release. The cable was released at a random time interval (2–10 s) following achievement of the prescribed posture and cable force (±1%BW), through the disengagement of an electromagnet located in-series with the cable. Participants were instructed to relax their muscles while leaning and to regain balance with a single step using the stepping lower limb of their choice. The instruction to attempt to recover using a single step was communicated to the participant prior to every trial. A second cable, instrumented with a load cell (S1W1kN, XTRAN, Australia), attached the safety harness to the ceiling, and was used to prevent participants from contacting the ground in the event of a fall. Overhead cable force and centre of pressure location were displayed in real time on a computer monitor and were visually inspected by the investigator to ensure anticipatory actions (e.g., anterior-posterior and medial-lateral weight shifting) were not evident in the period immediately prior to cable release. Following an initial trial at the 15%BW lean magnitude, participants performed 4 trials at each of 3 lean magnitudes in random order. All analysis was confined to the trials performed at the 20% lean magnitude condition, which corresponded to a forward lean at cable release of 13.7±1.9 degrees, as measured by the rotation of the whole body centre of mass about the ankle joint centre.</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Data collection and analysis procedures</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Trajectories of 51 reflective markers attached to the head, trunk, pelvis, and upper and lower limbs were recorded at 200 Hz using a 10-camera, three-dimensional motion capture system (Vicon MX cameras, Vicon Motion Systems, Oxford, UK) and processed using Vicon Nexus software (Version 1.4, Vicon Motion Systems, Oxford, UK). Full details regarding marker placement and the model for computing the whole body centre of mass kinematics are provided in Barrett et al. </fo:inline>
+          <fo:inline>[12]</fo:inline>
+          <fo:inline>. Ground reaction force (GRF) data were simultaneously acquired at 1 kHz using two 900×600 mm piezoelectric force platforms (Type 9287A, Kistler Instrument Corporation, USA). A single force platform was located under both feet at cable release, and a second force platform was located anterior to the first platform to record ground reaction forces from the stepping foot following foot contact.</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>The criteria used to distinguish a multiple from single step recovery strategy for each trial were: (1) a second step of any kind by the stepping leg or anterior progression of the non-stepping foot past the stepping foot following the initial step </fo:inline>
+          <fo:inline>[14]</fo:inline>
+          <fo:inline>, and (2) application of 20% BW or more to the ceiling restraint cable at any point during the second step </fo:inline>
+          <fo:inline>[15]</fo:inline>
+          <fo:inline>. The following groups were subsequently defined on the basis of the recovery strategy adopted by each participant across trials:</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Single steppers. Participants in this group used a single step recovery strategy for all 4 trials.</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Mixed steppers. Participants in this group used a multiple step recovery strategy on some trials and a single step strategy on other trials. For analysis purposes, the trials in this group were subdivided as follows:</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Mixed-single steppers. This subgroup consisted of trials (up to 3) performed by mixed steppers where a single step strategy was adopted.</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Mixed-multiple steppers. This subgroup consisted of trials (up to 3) performed by mixed steppers where a multiple step strategy was adopted.</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Multiple steppers. Participants in this group used a multiple step recovery strategy for all 4 trials.</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>The Margin of Stability (MoS) in the anterior-posterior direction was calculated using MoS = BoS – XCoM. The Base of Support (BoS) is an estimate of the range of positions that the centre of pressure of the net ground reaction force is confined to act within. The BoS in the antero-posterior direction was defined as the horizontal distance from the great toe marker on the rear leg to the corresponding marker on the step leg. The extrapolated centre of mass position (XCoM) was obtained using </fo:inline>
+          <fo:inline>, </fo:inline>
+          <fo:inline>[13]</fo:inline>
+          <fo:inline> where PCoM in the antero-posterior direction is the anterior-posterior distance from the great toe marker on the rear foot to the vertical projection of the centre of mass, VCoM is the velocity of the whole body centre of mass, </fo:inline>
+          <fo:inline font-style="italic">g</fo:inline>
+          <fo:inline font-style="italic"> is the acceleration due to gravity and </fo:inline>
+          <fo:inline font-style="italic">l</fo:inline>
+          <fo:inline font-style="italic"> is the effective pendulum length in the sagittal plane. Specific detail of how each MoS-related parameter was defined and computed in the present study is provided in Barrett et al. </fo:inline>
+          <fo:inline font-style="italic">[12]</fo:inline>
+          <fo:inline font-style="italic">.</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>MoS and parameters used to compute MoS were assessed at 3 events defined as follows: (1) Cable Release (CR): a 5% reduction in force measured using a force transducer in series with the restraining cable, (2) Toe Off (TO): defined from the vertical motion of the great toe marker on the stepping foot </fo:inline>
+          <fo:inline>[16]</fo:inline>
+          <fo:inline> and (3) FC: a GRF in excess of 5 N recorded on the anterior force plate. Average rate of BoS displacement from TO to FC (BoS rate), and the duration, average anterior-posterior GRF reaction force and associated impulse generated by the stepping and non-stepping feet for the period CR to TO and by the non-stepping foot for the period TO to FC, were also computed.</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Statistical analysis</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Analysis of Covariance (ANCOVA) was used to assess the effect of group (4 levels: Single steppers, Mixed-single steppers, Mixed-multiple steppers, Multiple steppers) on the dependent measures at the 20% body weight lean angle only, which has previously been shown to divide older adults into approximately equal sized groups with a positive versus negative antero-posterior MoS at FC </fo:inline>
+          <fo:inline>[7]</fo:inline>
+          <fo:inline>. Covariates were age, height and body mass. A-priori contrasts were performed to assess differences between adjacent groups and between single and multiple steppers. Significance was accepted for </fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic">&amp;lt;0.05.</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Results</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Stepping strategies and participant characteristics</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>No differences in horizontal cable force or forward lean angle at CR between groups were detected across repeated trials at the 20% lean magnitude (</fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic">&amp;gt;0.05). Of the 151 participants, 43 (29 males, 14 females) were classified as single steppers (Age: 70.1±3.8, Height: 1.68±0.09 m, Mass: 74.5±10.9 kg), 52 (28 males, 24 females) as mixed steppers (Age: 70.9±3.6, Height: 1.68±0.09 m, Mass: 77.5±14.0 kg) and 56 (22 males, 34 females) as multiple steppers (Age: 73.3±5.3, Height: 1.66±0.08 m, Mass: 75.5±13.1 kg). There was a significant main effect of group on age (F = 7.19, </fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic"> = 0.01). Planned contrasts revealed multiple steppers were significantly older than single steppers (</fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic">&amp;lt;0.01) and mixed steppers (</fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic"> = 0.02). Within the mixed group, 56% of participants adapted from multiple to single step strategy following the initial trial, 25% following the second trial and 19% following the third trial. Sixteen of the fifty-two participants within the mixed group reverted back to a multiple step strategy after successfully performing one or two single step recoveries.</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Margin of Stability (MoS)</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Group had a significant main effect on MoS at TO (F</fo:inline>
+          <fo:inline>4</fo:inline>
+          <fo:inline> = 6.41, </fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic">&amp;lt;0.01) and FC (F</fo:inline>
+          <fo:inline font-style="italic">4</fo:inline>
+          <fo:inline font-style="italic"> = 75.18, p&amp;lt;0.01). Planned contrasts revealed significant differences between single and multiple steppers for MoS at TO (</fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic">&amp;lt;0.01), and between all groups for MoS at FC (</fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic">&amp;lt;0.05) (</fo:inline>
+          <fo:inline font-style="italic">Figure 1</fo:inline>
+          <fo:inline font-style="italic">). At FC, group had a significant main effect on BoS (F</fo:inline>
+          <fo:inline font-style="italic">4</fo:inline>
+          <fo:inline font-style="italic"> = 16.65, p&amp;lt;0.01), XCoM (F</fo:inline>
+          <fo:inline font-style="italic">4</fo:inline>
+          <fo:inline font-style="italic"> = 14.57, </fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic">&amp;lt;0.01), PCoM (F</fo:inline>
+          <fo:inline font-style="italic">4</fo:inline>
+          <fo:inline font-style="italic"> = 12.00, </fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic">&amp;lt;0.01), VCoM (F</fo:inline>
+          <fo:inline font-style="italic">4</fo:inline>
+          <fo:inline font-style="italic"> = 16.98, </fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic">&amp;lt;0.01). BoS rate was also significantly different between all groups (F</fo:inline>
+          <fo:inline font-style="italic">4</fo:inline>
+          <fo:inline font-style="italic"> = 26.23, </fo:inline>
+          <fo:inline font-style="italic">p</fo:inline>
+          <fo:inline font-style="italic">&amp;lt;0.01). Planned contrasts revealed significant differences between groups as depicted in </fo:inline>
+          <fo:inline font-style="italic">Figure 2</fo:inline>
+          <fo:inline font-style="italic">. Mixed-single steppers had greater BoS rate, BoS, XCoM, PCoM and VCoM compared to single steppers. Mixed-multiple steppers had lesser BoS rate and BoS, and greater XCoM and VCoM compared to mixed-single steppers. Multiple steppers had lesser BoS rate and BoS compared to mixed-multiple and single steppers. Multiple steppers also had greater XCoM, PCoM and VCoM compared to single steppers.</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Durations between events, GRF and impulse</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Group had a significant main effect on the duration, mean anterior-posterior GRF and impulse generated by the stepping and non-stepping feet for the period CR to TO and by the non-stepping foot for the period TO to FC. Planned contrasts revealed significant differences between groups as presented in </fo:inline>
+          <fo:inline>Table 1</fo:inline>
+          <fo:inline>. Mixed-single steppers had increased anterior-posterior GRF and impulse from CR to TO and from TO to FC compared to single steppers. Mixed-multiple steppers increased anterior-posterior GRF and impulse from TO to FC compared to mixed-single steppers. Multiple steppers had a lesser duration from CR to TO and increased anterior-posterior GRF and impulse from TO to FC compared to single steppers.</fo:inline>
+        </fo:block>
+        <!-- table -->
+        <!--fo:block margin-left="-50pt" margin-top="10pt"-->
+          <fo:block-container margin="0pt">
+            <fo:table table-layout="fixed" width="100%" font-size="7pt">
+              <!-- columns -->
+              <fo:table-column column-number="1" column-width="proportional-column-width(3)"/>
+              <fo:table-column column-number="2" column-width="proportional-column-width(1)"/>
+              <fo:table-column column-number="3" column-width="proportional-column-width(1)"/>
+              <fo:table-column column-number="4" column-width="proportional-column-width(1)"/>
+              <fo:table-column column-number="5" column-width="proportional-column-width(1)"/>
+              <fo:table-column column-number="6" column-width="proportional-column-width(1)"/>
+              <!-- header -->
+              <fo:table-header line-height="15pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
+                <fo:table-row>
+                  <fo:table-cell column-number="2" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>Single</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="3" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>Mixed-single</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="4" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>Mixed-multiple</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="5" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>Multiple</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="6" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>F, </fo:inline>
+                      <fo:inline>p</fo:inline>
+                      <fo:inline> (ANOVA)</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                </fo:table-row>
+              </fo:table-header>
+              <!-- body -->
+              <fo:table-body line-height="12pt" text-align="left">
+                <fo:table-row>
+                  <fo:table-cell column-number="1" number-columns-spanned="1">
+                    <fo:block text-align="left">
+                      <fo:inline>CR-TO duration (s)</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>0.27±0.05</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="3" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>0.26±0.03</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="4" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>0.27±0.03</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="5" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>0.28±0.04</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="6" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>3.63, 0.01</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                </fo:table-row>
+                <fo:table-row>
+                  <fo:table-cell column-number="1" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>TO-FC duration (s)</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>0.19±0.04</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="3" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>0.19±0.03</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="4" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>0.19±0.03</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="5" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>0.18±0.02</fo:inline>
+                      <fo:inline>#</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="6" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>3.13, 0.03</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                </fo:table-row>
+                <fo:table-row>
+                  <fo:table-cell column-number="1" number-columns-spanned="1">
+                    <fo:block wrap-option="no-wrap">
+                      <fo:inline>Mean A-P ground reaction force CR-TO (N)</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>134±33</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="3" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>158±39</fo:inline>
+                      <fo:inline>*</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="4" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>156±45</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="5" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>141±41</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="6" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>4.69, &amp;lt;0.01</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                </fo:table-row>
+                <fo:table-row>
+                  <fo:table-cell column-number="1" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>Mean A-P ground reaction force TO-FC (N)</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>95±37</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="3" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>125±33</fo:inline>
+                      <fo:inline>*</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="4" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>147±44</fo:inline>
+                      <fo:inline>*</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="5" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>145±47</fo:inline>
+                      <fo:inline>#</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="6" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>19.59, &amp;lt;0.01</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                </fo:table-row>
+                <fo:table-row>
+                  <fo:table-cell column-number="1" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>Mean A-P Impulse CR-TO (N.s)</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>34±9</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="3" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>40±10</fo:inline>
+                      <fo:inline>*</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="4" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>40±11</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="5" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>38±11</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="6" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>2.99, 0.03</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                </fo:table-row>
+                <fo:table-row>
+                  <fo:table-cell column-number="1" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>Mean A-P Impulse TO-FC (N.s)</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>18±8</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="3" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>24±8</fo:inline>
+                      <fo:inline>*</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="4" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>27±10</fo:inline>
+                      <fo:inline>*</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="5" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>24±9</fo:inline>
+                      <fo:inline>#</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="6" number-columns-spanned="1">
+                    <fo:block>
+                      <fo:inline>10.37, &amp;lt;0.01</fo:inline>
+                    </fo:block>
+                  </fo:table-cell>
+                </fo:table-row>
+              </fo:table-body>
+            </fo:table>
+          </fo:block-container>
+        <!--/fo:block-->
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Discussion</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>No group differences in MoS were detected at CR suggesting that the initial stability conditions were effectively controlled through a combination of prior instructions to participants, real-time monitoring of cable force and centre of pressure data, and use of a random time delay prior to CR. However, significant main group effects were detected for MoS at TO, and most notably at FC, where all group comparisons conducted were significant. Approximately one-third of participants were able to alter their recovery response from multiple to single steps following repeated exposure to forward loss of balance and were subsequently classified as using a mixed strategy. In support of our hypothesis, the MoS was improved in trials where mixed steppers were able to recover with single compared to multiple steps. The MoS at FC for mixed-single steppers and mixed-multiple steppers were intermediate between the exclusively single step group and the exclusively multiple step group, with mixed-single steppers having a significant, 3.7 times higher MoS at FC than mixed-multiple steppers. In contrast to multiple steppers, mixed-multiple steppers had a positive MoS at FC, suggesting that these participants were closer to the threshold of recovery with a single step than those in the exclusively multiple step group. The finding that multiple steppers were significantly older than the mixed and single steppers suggests factors associated with ageing such as declines in muscular strength and neuromotor control may contribute to the inability to recover with a single step. The MoS for mixed-single steppers reached only 83% of the MoS observed in the single step group. Therefore, while further task exposure could lead to further improvements in MoS in the mixed and multiple step groups, other factors, such as muscle weakness may limit the ability to recover with a single step. The finding that 16 out of 52 participants (∼31%) in the mixed group reverted to a multiple step strategy following one or two single step trials further reinforces the suggestion that the mixed group were operating close to the threshold for recovery with a single step, where small differences in the recovery response can influence the ability to recovery with a single step. However, we cannot discount the possibility that fatigue was a factor that led to the lapse back to a multiple step strategy in these 16 participants.</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Findings from the present study also support our hypothesis that the mechanism of improvement exhibited by the mixed group in single versus multiple step trials was consistent with differences between exclusively single versus multiple step groups. In agreement with the findings of Arampatzis et al. </fo:inline>
+          <fo:inline>[14]</fo:inline>
+          <fo:inline>, the greater MoS at FC in the exclusively single compared to the exclusively multiple step group were attributed to greater BoS and BoS rate, and lesser XCoM, PCoM and VCoM. The greater MoS at FC for the mixed-single versus mixed-multiple steppers was consistent with differences between exclusively single and multiple step groups and was explained by a corresponding increase in BoS and BoS rate, as well as a decrease in XCoM brought about by a decrease in VCoM. The decreased VCoM in mixed-single steppers was in turn explained by a reduction in the impulse generated by the anterior-posterior GRF in mixed-single steppers. Barrett et al. </fo:inline>
+          <fo:inline>[12]</fo:inline>
+          <fo:inline> reported that the main mechanism underlying the adaptation in balance recovery responses to repeated forward loss of balance in older adults using the same protocol as the present study was related improved control of centre of mass motion. A likely reason that BoS related parameters were also found to be mechanisms underlying adaptation in the present study, but not in the study by Barrett et al. </fo:inline>
+          <fo:inline>[12]</fo:inline>
+          <fo:inline>, was that Barrett et al. </fo:inline>
+          <fo:inline>[12]</fo:inline>
+          <fo:inline> did not distinguish between subgroups, which would be expected to exhibit different adaptive behaviours in response to repeated forward loss of balance. The observed adaptations in BoS related parameters in the present study are also broadly consistent with those reported as a result of a 14-week stability-based training intervention in older adults designed to exercise the mechanisms for dynamic stability </fo:inline>
+          <fo:inline>[17]</fo:inline>
+          <fo:inline>. Taken together these findings suggest the ability of older adults to adapt from a multiple to single step recovery strategy following repeated exposure to forward loss of balance is due to a combination of taking longer, more rapid steps, as well as improved control of whole body centre of mass motion.</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>The main limitation of the present study was that adaptation in recovery responses may not have reached steady state within the number of trials performed. It therefore remains possible that further task exposure may have resulted in more participants adapting from a multiple to a single step strategy and those who did may have experienced greater improvements in MoS. Further, a degree of caution is also warranted in generalising the findings of the present study due to the task specificity of different types of falls </fo:inline>
+          <fo:inline>[18]</fo:inline>
+          <fo:inline>. Finally, the assumption underlying the concept of MoS that the excursion of the centre of mass is small relative to the length of the pendulum is violated during balance recovery by stepping </fo:inline>
+          <fo:inline>[12]</fo:inline>
+          <fo:inline>. However this does not alter our conclusion that adaptive stepping responses that favoured improved MoS were evident in our study.</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" font-weight="bold" line-height="16pt" font-size="11pt">
+          <fo:inline>Conclusion</fo:inline>
+        </fo:block>
+        <fo:block>
+          <fo:inline>Older adults that exhibited a change from a multiple to a single step recovery strategy following repeated exposure to forward loss of balance were found to have improved dynamic stability at FC in the trials where they were able to recover with single compared to multiple steps. Improvements in dynamic stability were due to taking longer and more rapid steps and a reduced forward velocity of the whole body centre of mass, and were consistent with differences in stepping behaviour between exclusively single and exclusively multiple steppers. The observed adaptations occurred within a single test session and suggest older adults that are close to the threshold of successful recovery can rapidly improve dynamic stability following repeated exposure to a forward loss of balance.</fo:inline>
+        </fo:block>
+        <!-- back -->
+        <fo:block margin-top="10pt" font-size="12pt" font-weight="bold">
+          <fo:inline>References</fo:inline>
+        </fo:block>
+        <fo:block margin-top="8pt" text-align="justify" font-size="9pt" font-family="serif">
+          <fo:list-block provisional-distance-between-starts="6mm" end-indent="12mm" start-indent="12mm">
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>1. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>ME Tinetti, M Speechley</fo:inline>
+                  <fo:inline>(1989)</fo:inline>
+                  <fo:inline>Prevention of falls among the elderly.</fo:inline>
+                  <fo:inline>N Engl J Med</fo:inline>
+                  <fo:inline>320:</fo:inline>
+                  <fo:inline>1055-1059</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>2. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>AJ Campbell, MJ Borrie, GF Spears, SL Jackson, JS Brown</fo:inline>
+                  <fo:inline>(1990)</fo:inline>
+                  <fo:inline>Circumstances and consequences of falls experienced by a community population 70 years and over during a prospective study.</fo:inline>
+                  <fo:inline>Age Ageing</fo:inline>
+                  <fo:inline>19:</fo:inline>
+                  <fo:inline>136-141</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>3. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>ME Tinetti, J Doucette, E Claus, R Marottoli</fo:inline>
+                  <fo:inline>(1995)</fo:inline>
+                  <fo:inline>Risk factors for serious injury during falls by older persons in the community.</fo:inline>
+                  <fo:inline>J Am Geriatr Soc</fo:inline>
+                  <fo:inline>43:</fo:inline>
+                  <fo:inline>1214-1221</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>4. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>MC Do, Y Breniere, P Brenguier</fo:inline>
+                  <fo:inline>(1982)</fo:inline>
+                  <fo:inline>A biomechanical study of balance recovery during the fall forward.</fo:inline>
+                  <fo:inline>J Biomech</fo:inline>
+                  <fo:inline>15:</fo:inline>
+                  <fo:inline>933-939</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>5. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>DG Thelen, LA Wojcik, AB Schultz, JA Ashton-Miller, NB Alexander</fo:inline>
+                  <fo:inline>(1997)</fo:inline>
+                  <fo:inline>Age differences in using a rapid step to regain balance during a forward fall.</fo:inline>
+                  <fo:inline>J Gerontol A Biol Sci Med Sci</fo:inline>
+                  <fo:inline>52:</fo:inline>
+                  <fo:inline>M8-13</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>6. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>K Karamanidis, A Arampatzis, L Mademli</fo:inline>
+                  <fo:inline>(2008)</fo:inline>
+                  <fo:inline>Age-related deficit in dynamic stability control after forward falls is affected by muscle strength and tendon stiffness.</fo:inline>
+                  <fo:inline>J Electromyogr Kinesiol</fo:inline>
+                  <fo:inline>18:</fo:inline>
+                  <fo:inline>980-989</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>7. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>CP Carty, P Mills, R Barrett</fo:inline>
+                  <fo:inline>(2011)</fo:inline>
+                  <fo:inline>Recovery from forward loss of balance in young and older adults using the stepping strategy.</fo:inline>
+                  <fo:inline>Gait Posture</fo:inline>
+                  <fo:inline>33:</fo:inline>
+                  <fo:inline>261-267</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>8. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>BE Maki, MA Edmondstone, SD Perry, E Heung, S Quant</fo:inline>
+                  <fo:inline>(2001)</fo:inline>
+                  <fo:inline>Control of rapid limb movements for balance recovery: do age-related changes predict falling risk?</fo:inline>
+                  <fo:inline>Control of Posture and Gait</fo:inline>
+                  <fo:inline>126-129</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>9. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>MJ Pavol, EF Runtz, YC Pai</fo:inline>
+                  <fo:inline>(2004)</fo:inline>
+                  <fo:inline>Young and older adults exhibit proactive and reactive adaptations to repeated slip exposure.</fo:inline>
+                  <fo:inline>J Gerontol A Biol Sci Med Sci</fo:inline>
+                  <fo:inline>59:</fo:inline>
+                  <fo:inline>494-502</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>10. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>WE McIlroy, BE Maki</fo:inline>
+                  <fo:inline>(1995)</fo:inline>
+                  <fo:inline>Adaptive changes to compensatory stepping responses.</fo:inline>
+                  <fo:inline>Gait Posture</fo:inline>
+                  <fo:inline>3:</fo:inline>
+                  <fo:inline>43-50</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>11. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>S Bierbaum, A Peper, K Karamanidis, A Arampatzis</fo:inline>
+                  <fo:inline>(2010)</fo:inline>
+                  <fo:inline>Adaptational responses in dynamic stability during disturbed walking in the elderly.</fo:inline>
+                  <fo:inline>J Biomech</fo:inline>
+                  <fo:inline>43:</fo:inline>
+                  <fo:inline>2362-2368</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>12. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>RS Barrett, NJ Cronin, GA Lichtwark, PM Mills, CP Carty</fo:inline>
+                  <fo:inline>(2012)</fo:inline>
+                  <fo:inline>Adaptive recovery responses to repeated forward loss of balance in older adults.</fo:inline>
+                  <fo:inline>J Biomech</fo:inline>
+                  <fo:inline>45:</fo:inline>
+                  <fo:inline>183-187</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>13. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>AL Hof, MG Gazendam, WE Sinke</fo:inline>
+                  <fo:inline>(2005)</fo:inline>
+                  <fo:inline>The condition for dynamic stability.</fo:inline>
+                  <fo:inline>J Biomech</fo:inline>
+                  <fo:inline>38:</fo:inline>
+                  <fo:inline>1-8</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>14. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>A Arampatzis, K Karamanidis, L Mademli</fo:inline>
+                  <fo:inline>(2008)</fo:inline>
+                  <fo:inline>Deficits in the way to achieve balance related to mechanisms of dynamic stability control in the elderly.</fo:inline>
+                  <fo:inline>J Biomech</fo:inline>
+                  <fo:inline>41:</fo:inline>
+                  <fo:inline>1754-1761</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>15. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>MA Cyr, C Smeesters</fo:inline>
+                  <fo:inline>(2009)</fo:inline>
+                  <fo:inline>Maximum allowable force on a safety harness cable to discriminate a successful from a failed balance recovery.</fo:inline>
+                  <fo:inline>J Biomech</fo:inline>
+                  <fo:inline>42:</fo:inline>
+                  <fo:inline>1566-1569</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>16. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>JK De Witt</fo:inline>
+                  <fo:inline>(2010)</fo:inline>
+                  <fo:inline>Determination of toe-off event time during treadmill locomotion using kinematic data.</fo:inline>
+                  <fo:inline>J Biomech</fo:inline>
+                  <fo:inline>43:</fo:inline>
+                  <fo:inline>3067-3069</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>17. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>A Arampatzis, A Peper, S Bierbaum</fo:inline>
+                  <fo:inline>(2011)</fo:inline>
+                  <fo:inline>Exercise of mechanisms for dynamic stability control increases stability performance in the elderly.</fo:inline>
+                  <fo:inline>J Biomech</fo:inline>
+                  <fo:inline>44:</fo:inline>
+                  <fo:inline>52-58</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+              <fo:list-item-label end-indent="label-end()">
+                <fo:block>
+                  <fo:inline>18. </fo:inline>
+                </fo:block>
+              </fo:list-item-label>
+              <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                  <fo:inline>MD Grabiner, S Donovan, ML Bareither, JR Marone, K Hamstra-Wright</fo:inline>
+                  <fo:inline>(2008)</fo:inline>
+                  <fo:inline>Trunk kinematics and fall risk of older adults: translating biomechanical results to the clinic.</fo:inline>
+                  <fo:inline>J Electromyogr Kinesiol</fo:inline>
+                  <fo:inline>18:</fo:inline>
+                  <fo:inline>197-204</fo:inline>
+                </fo:block>
+              </fo:list-item-body>
+            </fo:list-item>
+          </fo:list-block>
+        </fo:block>
+      </fo:block-container>
+    </fo:flow>
+  </fo:page-sequence>
+</fo:root>

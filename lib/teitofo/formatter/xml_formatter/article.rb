@@ -40,7 +40,7 @@ module TeiToFo
                 xml.tag!('fo:region-body', {
                   'region-name': 'xsl-region-body',
                   'margin-top': '12mm',
-                  'margin-bottom': '12mm'
+                  'margin-bottom': '12mm',
                 })
                 xml.comment! 'header area'
                 xml.tag!('fo:region-before', {

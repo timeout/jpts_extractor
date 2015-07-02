@@ -5,7 +5,9 @@ require 'teitofo/handler/journal_meta_handler'
 require 'teitofo/handler/article_meta_handler'
 require 'teitofo/handler/abstract_handler'
 require 'teitofo/handler/section_handler'
+require 'teitofo/handler/table_wrap_handler'
 require 'teitofo/handler/table_handler'
+require 'teitofo/handler/figure_handler'
 require 'teitofo/handler/text_block_handler'
 require 'teitofo/handler/back_handler'
 require 'teitofo/handler/ref_list_handler'
@@ -62,8 +64,12 @@ module TeiToFo
           @stack.push(AbstractHandler.new)
         when :sec
           @stack.push(SectionHandler.new)
+        when :'table-wrap'
+          @stack.push(TableWrapHandler.new)
         when :table
           @stack.push(TableHandler.new)
+        when :fig
+          @stack.push(FigureHandler.new)
         when :'ref-list'
           @stack.push(RefListHandler.new)
         when :ref
@@ -72,65 +78,16 @@ module TeiToFo
           @logger.debug "#{self.class.name}##{__method__}(#{name})"
         end
 
-        # names = @stack.map do |handler|
-        #   handler.class.name[18..-1]
-        # end
-        # @logger.debug "#{names.join('|')}"
         @stack.top.on_start_element(name)
       end
 
       def end_element(name)
         @stack.top.on_end_element(name)
         case name
-        when :ref
-          raise Exceptions::NullHandlerError.new unless @stack.top.respond_to? :builder
-          raise Exceptions::BadParseError.new(
-            "#{@stack.top.builder.class} cannot build product, #{method_name(name)}"
-          ) unless @stack.top.builder.respond_to? method_name(name)
-          product = @stack.top.builder.ref
-          @stack.pop
-
-          raise Exceptions::BadParseError.new unless @stack.top.respond_to? :builder
-          raise Exceptions::BadParseError.new(
-            "#{@stack.top.builder.class} : unknown method :<<"
-          ) unless @stack.top.builder.respond_to? :<<
-
-          @stack.top.builder << product
-        when :table
-          raise Exceptions::NullHandlerError.new unless @stack.top.respond_to? :builder
-          raise Exceptions::BadParseError.new(
-            "#{@stack.top.builder.class} cannot build product, #{method_name(name)}"
-          ) unless @stack.top.builder.respond_to? method_name(name)
-          product = @stack.top.builder.table
-          @stack.pop
-
-          raise Exceptions::BadParseError.new unless @stack.top.respond_to? :builder
-          # abstract also responds to :<<, trust xml, heh... :S :>>
-          raise Exceptions::BadParseError.new unless @stack
-            .top.builder.respond_to? :<<
-
-          @stack.top.builder << product
-# puts "========================="
-# @stack.top.builder.sec.each do |subsection|
-#   puts subsection
-# end
-        when :sec
-          raise Exceptions::NullHandlerError.new unless @stack.top.respond_to? :builder
-          raise Exceptions::BadParseError.new(
-            "#{@stack.top.builder.class} cannot build product, #{method_name(name)}"
-          ) unless @stack.top.builder.respond_to? method_name(name)
-          product = @stack.top.builder.sec
-          @stack.pop
-
-          raise Exceptions::BadParseError.new unless @stack.top.respond_to? :builder
-          # abstract also responds to :<<, trust xml, heh... :S :>>
-          raise Exceptions::BadParseError.new unless @stack
-            .top.builder.respond_to? :<<
-
-          @stack.top.builder << product
-
+        when :sec, :'table-wrap', :ref, :fig
+          enqueue_product(name)
         when :front, :body, :back, :'journal-meta', :'article-meta', 
-          :abstract, :'ref-list'
+          :abstract, :'ref-list', :table
           assemble_product(name)
         when :article
           raise Exceptions::NullHandlerError.new unless @stack.top.respond_to? :builder
@@ -142,10 +99,6 @@ module TeiToFo
           @logger.debug "#{self.class.name}##{__method__}(#{name})"
         end
 
-        # names = @stack.map do |handler|
-        #   handler.class.name[18..-1]
-        # end
-        # @logger.debug "#{names.join('|')}"
       end
 
       def attr(name, value)
@@ -165,6 +118,22 @@ module TeiToFo
         name.to_s.gsub '-', '_'
       end
 
+      def enqueue_product(name)
+        raise Exceptions::NullHandlerError.new unless @stack.top.respond_to? :builder
+        raise Exceptions::BadParseError.new(
+          "#{@stack.top.builder.class} cannot build product, #{method_name(name)}"
+        ) unless @stack.top.builder.respond_to? method_name(name)
+        product = @stack.top.builder.send method_name(name)
+        @stack.pop
+
+        raise Exceptions::BadParseError.new unless @stack.top.respond_to? :builder
+        # abstract also responds to :<<, trust xml, heh... :S :>>
+        raise Exceptions::BadParseError.new unless @stack
+          .top.builder.respond_to? :<<
+
+        @stack.top.builder << product
+      end
+
       def assemble_product(name)
         raise Exceptions::NullHandlerError.new(
           "#{@stack.top.class} doesn't have a builder"
@@ -177,7 +146,9 @@ module TeiToFo
         @stack.pop
 
         raise Exceptions::BadParseError.new unless @stack.top.respond_to? :builder
-        raise Exceptions::BadParseError.new unless @stack
+        raise Exceptions::BadParseError.new(
+          "#{@stack.top.builder.class} has no writer method: #{writer_method(name)}".colorize(:red)
+        ) unless @stack
           .top.builder.respond_to? writer_method(name)
 
         @stack.top.builder.send writer_method(name), product

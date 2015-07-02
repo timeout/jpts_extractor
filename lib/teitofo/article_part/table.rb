@@ -3,14 +3,23 @@ module TeiToFo
     class Table
 
       def initialize
+        @columns = Array.new
         @header_rows = Array.new
         @body_rows = Array.new
       end
 
-      attr_reader :header_rows
+      attr_reader :columns, :header_rows, :body_rows
 
-      def add_cell_to_header_row(cell)
-        @header_rows << cell
+      def add_column_styling(styles)
+        self.columns << styles
+      end
+
+      def add_header_row(row)
+        @header_rows << row
+      end
+
+      def add_body_row(row)
+        @body_rows << row
       end
 
       def format(table_formatter)

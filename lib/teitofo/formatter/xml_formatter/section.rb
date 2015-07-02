@@ -1,5 +1,5 @@
 require 'teitofo/formatter/xml_formatter/text_block'
-require 'teitofo/formatter/xml_formatter/table'
+require 'teitofo/formatter/xml_formatter/table_wrap'
 
 module TeiToFo
   module Formatter
@@ -9,10 +9,10 @@ module TeiToFo
         def initialize(xml)
           @xml = xml
           @text_block_formatter = TextBlock.new(@xml)
-          @table_formatter = Table.new(@xml)
+          @table_wrap_formatter = TableWrap.new(@xml)
         end
 
-        attr_reader :xml, :text_block_formatter, :table_formatter
+        attr_reader :xml, :text_block_formatter, :table_wrap_formatter
 
         def format(section)
           format_title(section.title) if section.title?
@@ -25,8 +25,8 @@ module TeiToFo
               subsection.format(self)
             when TeiToFo::ArticlePart::TextBlock
               subsection.format(self.text_block_formatter)
-            when TeiToFo::ArticlePart::Table
-              subsection.format(self.table_formatter)
+            when TeiToFo::ArticlePart::TableWrap
+              subsection.format(self.table_wrap_formatter)
             else
               #TODO:
             end
