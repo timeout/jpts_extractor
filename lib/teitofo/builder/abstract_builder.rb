@@ -1,20 +1,23 @@
 require 'teitofo/article_part/abstract'
+require 'teitofo/builder/text_builder'
 
 module TeiToFo
   module Builder
     class AbstractBuilder
+      include TextBuilder
+
       def initialize
         @abstract = ArticlePart::Abstract.new
       end
 
       attr_reader :abstract
 
-      def title= (title)
-        @abstract.title = title
+      def title!
+        self.abstract.title = self.text
       end
 
-      def paragraph= (text_block)
-        @abstract.paragraph = text_block
+      def paragraph!
+        self.abstract.paragraph =  self.text
       end
 
       def add_section(subsection)

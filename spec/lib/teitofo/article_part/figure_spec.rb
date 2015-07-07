@@ -1,5 +1,5 @@
 require 'teitofo/article_part/figure'
-require 'teitofo/article_part/text_block'
+require 'teitofo/article_part/text'
 require 'teitofo/article_part/inline_text/inline_text'
 
 RSpec.describe TeiToFo::ArticlePart::Figure do
@@ -20,23 +20,23 @@ RSpec.describe TeiToFo::ArticlePart::Figure do
   end
 
   describe '#label' do
-    let(:text_block) { TeiToFo::ArticlePart::TextBlock.new }
+    let(:text) { TeiToFo::ArticlePart::Text.new }
     it 'gets and sets a text block label' do
-      text_block << TeiToFo::ArticlePart::InlineText::InlineText.new('Figure 1.')
-      figure.label = text_block
-      expect(figure.label).to eq(text_block)
+      text << TeiToFo::ArticlePart::InlineText::InlineText.new('Figure 1.')
+      figure.label = text
+      expect(figure.label).to eq(text)
     end
 
     it 'has a label' do
       expect(figure.label?).to be_falsey
-      text_block << TeiToFo::ArticlePart::InlineText::InlineText.new('Figure 1.')
-      figure.label = text_block
+      text << TeiToFo::ArticlePart::InlineText::InlineText.new('Figure 1.')
+      figure.label = text
       expect(figure.label?).to be_truthy
     end
   end
 
   describe '#caption' do
-    let(:text_block) { TeiToFo::ArticlePart::TextBlock.new }
+    let(:text) { TeiToFo::ArticlePart::Text.new }
     let(:title) { TeiToFo::ArticlePart::InlineText::InlineText.new(
       'Shoot low they\'re riding shetland ponies!') }
     let(:paragraph) { TeiToFo::ArticlePart::InlineText::InlineText.new(

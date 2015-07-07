@@ -1,12 +1,12 @@
-require 'teitofo/formatter/xml_formatter/text_block'
+require 'teitofo/formatter/xml_formatter/text'
 require 'teitofo/formatter/xml_formatter/inline_text'
 
 require 'builder'
 
-RSpec.describe TeiToFo::Formatter::XmlFormatter::TextBlock do
+RSpec.describe TeiToFo::Formatter::XmlFormatter::Text do
 
   let(:xml) { Builder::XmlMarkup.new(indent: 2) }
-  let(:formatter) { TeiToFo::Formatter::XmlFormatter::TextBlock.new(xml) }
+  let(:formatter) { TeiToFo::Formatter::XmlFormatter::Text.new(xml) }
 
   describe '#initialize' do
     it 'constructs an inline formatter' do
@@ -22,18 +22,16 @@ RSpec.describe TeiToFo::Formatter::XmlFormatter::TextBlock do
       this.text = 'This is some'
       important = inline.dup
       important.text = 'important'
-      text = inline.dup
-      text.text = 'text'
+      content = inline.dup
+      content.text = 'text'
 
-      text_block = TeiToFo::ArticlePart::TextBlock.new
-      text_block.add_fragment(this).add_fragment(important).add_fragment(text)
-      formatter.format(text_block)
+      text = TeiToFo::ArticlePart::Text.new
+      text.add_fragment(this).add_fragment(important).add_fragment(content)
+      formatter.format(text)
       expect(formatter.xml.target!).to eq(
-        "<fo:block>\n" +
-        "  <fo:inline>This is some</fo:inline>\n" +
-        "  <fo:inline>important</fo:inline>\n" +
-        "  <fo:inline>text</fo:inline>\n" +
-        "</fo:block>\n"
+        "<fo:inline>This is some</fo:inline>\n" +
+        "<fo:inline>important</fo:inline>\n" +
+        "<fo:inline>text</fo:inline>\n"
       )
     end
 
@@ -43,19 +41,17 @@ RSpec.describe TeiToFo::Formatter::XmlFormatter::TextBlock do
       important = inline.dup
       important.text = 'important'
       important = TeiToFo::ArticlePart::InlineText::ItalicText.new(important)
-      text = inline.dup
-      text.text = 'text'
-      text = TeiToFo::ArticlePart::InlineText::BoldText.new(text)
+      content = inline.dup
+      content.text = 'text'
+      text = TeiToFo::ArticlePart::InlineText::BoldText.new(content)
 
-      text_block = TeiToFo::ArticlePart::TextBlock.new
-      text_block.add_fragment(this).add_fragment(important).add_fragment(text)
-      formatter.format(text_block)
+      text = TeiToFo::ArticlePart::Text.new
+      text.add_fragment(this).add_fragment(important).add_fragment(content)
+      formatter.format(text)
       expect(formatter.xml.target!).to eq(
-        "<fo:block>\n" +
-        "  <fo:inline>This is some</fo:inline>\n" +
-        "  <fo:inline font-style=\"italic\">important</fo:inline>\n" +
-        "  <fo:inline font-weight=\"bold\">text</fo:inline>\n" +
-        "</fo:block>\n"
+        "<fo:inline>This is some</fo:inline>\n" +
+        "<fo:inline font-style=\"italic\">important</fo:inline>\n" +
+        "<fo:inline font-weight=\"bold\">text</fo:inline>\n"
       )
     end
   end

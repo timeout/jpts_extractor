@@ -17,7 +17,7 @@ module TeiToFo
         case name
         when :label
           @label = true
-          self.builder.text_block!
+          self.builder.text!
         when :caption
           @caption_handler = CaptionHandler.new
         end

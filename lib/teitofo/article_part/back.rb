@@ -1,8 +1,6 @@
 module TeiToFo
   module ArticlePart
     class Back
-      def initialize
-      end
 
       attr_accessor :ref_list
 

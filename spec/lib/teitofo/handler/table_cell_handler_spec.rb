@@ -40,7 +40,7 @@ RSpec.describe TeiToFo::Handler::TableCellHandler do
     it 'creates a fragment' do
       subhandler.on_text('Spreekt u Engels?')
       table_cell = subhandler.builder.table_cell
-      expect(table_cell.text_block.fragments.first.text).to eq('Spreekt u Engels?')
+      expect(table_cell.text.fragments.first.text).to eq('Spreekt u Engels?')
     end
 
     it 'creates a styled text block' do
@@ -49,7 +49,7 @@ RSpec.describe TeiToFo::Handler::TableCellHandler do
       subhandler.on_start_element(:bold)
       subhandler.on_text('Goede nacht , zoete prins')
       table_cell = subhandler.builder.table_cell
-      expect(table_cell.text_block.fragments.first.styles)
+      expect(table_cell.text.fragments.first.styles)
         .to include('font-style': 'italic')
     end
   end

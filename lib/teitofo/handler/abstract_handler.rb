@@ -1,11 +1,10 @@
 require 'teitofo/handler/subhandler'
 require 'teitofo/builder/abstract_builder'
-require 'teitofo/handler/text_block_handler'
-require 'teitofo/handler/section_handler'
 
 module TeiToFo
   module Handler
     class AbstractHandler < SubHandler
+
       def initialize
         @builder = Builder::AbstractBuilder.new
       end
@@ -13,12 +12,10 @@ module TeiToFo
       attr_reader :builder
 
       def on_start_element(name)
-        @text_block_handler.on_start_element(name) if @text_block_handler
         case name
-        when :title
+        when :title, :p
           switch_text_on
-        when :p
-          @text_block_handler = TextBlockHandler.new 
+          self.builder.text!
         end
         push_event(name)
       end
@@ -27,22 +24,18 @@ module TeiToFo
         pop_event
         case name
         when :title
-          builder.title = @text
+          self.builder.title!
           switch_text_off
         when :p
-          builder.paragraph = @text_block_handler.builder.text_block
-          @text_block_handler = nil
+          self.builder.paragraph!
+          switch_text_off
         end
       end
 
       def on_text(value)
-        @text = value if text?
-        @text_block_handler.on_text(value) if @text_block_handler
+        self.builder.create_fragment(value, event_stack) if text?
       end
 
-      def on_attr(name, value)
-        @text_block_handler.on_attr(name, value) if @text_block_handler
-      end
     end
   end
 end

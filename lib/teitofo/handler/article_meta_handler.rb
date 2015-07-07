@@ -1,18 +1,15 @@
 require 'teitofo/handler/subhandler'
 require 'teitofo/builder/article_meta_builder'
 
-require 'teitofo/handler/text_block_handler'
-
 module TeiToFo
   module Handler
     class ArticleMetaHandler < SubHandler
       def initialize
         @builder = Builder::ArticleMetaBuilder.new
+        @state = nil
       end
 
-      TextHandler = Struct.new(:name, :text_block_handler)
-
-      attr_reader :builder
+      attr_reader :builder, :state
       attr_accessor :text_handler
 
       def on_start_element(name)
@@ -23,6 +20,8 @@ module TeiToFo
           switch_text_on
         when :fn, :'pub-date', :date, :contrib, :aff
           switch_attr_on
+        when :p
+          self.builder.text!
         end
       end
 
@@ -37,19 +36,17 @@ module TeiToFo
           switch_text_off
         when :fn
           switch_attr_off
+          @state = nil
         when :p
-          if self.text_handler
-            text_block = self.text_handler.text_block_handler.builder.text_block
-            @builder.conflict = text_block if self.text_handler.name == :conflict
-            @builder.conceived = text_block if self.text_handler.name == :conceived
-          end
+          self.builder.conflict! if self.state == :conflict
+          self.builder.conceived! if self.state == :con
         when :'copyright-year'
           @builder.copyright_year = @text
           switch_text_off
         when :'copyright-holder'
           @builder.copyright_holder = @text
           switch_text_off
-        # date
+          # date
         when :day
           @builder.pub_date_day = @text.to_i if :'pub-date' == top 
           @builder.recv_date_day = @text.to_i if @value == :received
@@ -71,7 +68,7 @@ module TeiToFo
           @builder.build_accept_date if @value == :accepted
           switch_text_off
           @value = nil
-        # authors
+          # authors
         when :surname
           @builder.surname = @text if @value == :author
         when :'given-names'
@@ -84,7 +81,7 @@ module TeiToFo
         when :'contrib-group'
           @builder.build_authors if @value == :author
           @value = :nil
-        # affiliations
+          # affiliations
         when :label
           @builder.aff_label = @text if @value == :affiliation
         when :'addr-line'
@@ -98,17 +95,15 @@ module TeiToFo
       end
 
       def on_text(value)
-        self.text_handler.text_block_handler.on_text(value) if self.text_handler
+        self.builder.create_fragment(value, event_stack) if [:con, :conflict].include? self.state
         @text = value if text?
       end
 
       def on_attr(name, value)
         if attr?
           case (value)
-          when 'conflict'
-            @text_handler = TextHandler.new(:conflict, TextBlockHandler.new)
-          when 'con'
-            @text_handler = TextHandler.new(:conceived, TextBlockHandler.new)
+          when 'conflict', 'con'
+            @state = value.to_sym
           when 'epub' # <pub-date pub-type="epub">
             switch_text_on
           when 'received'

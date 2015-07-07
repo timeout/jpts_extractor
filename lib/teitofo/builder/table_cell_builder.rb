@@ -30,7 +30,7 @@ module TeiToFo
             inline_text = ArticlePart::InlineText::Monospace.new(inline_text)
           end
         end if event_stack
-        self.table_cell.text_block << inline_text
+        self.table_cell.text << inline_text
       end
     end
   end

@@ -1,5 +1,5 @@
 require 'teitofo/article_part/table_wrap'
-require 'teitofo/article_part/text_block'
+require 'teitofo/article_part/text'
 
 module TeiToFo
   module Builder
@@ -9,14 +9,14 @@ module TeiToFo
         @table_wrap = ArticlePart::TableWrap.new
       end
 
-      attr_reader :table_wrap, :text_block
+      attr_reader :table_wrap, :text
 
-      def text_block!
-        @text_block = ArticlePart::TextBlock.new
+      def text!
+        @text = ArticlePart::Text.new
       end
 
       def label!
-        self.table_wrap.label = self.text_block
+        self.table_wrap.label = self.text
       end
 
       def create_fragment(value, event_stack)
@@ -35,7 +35,7 @@ module TeiToFo
             inline_text = ArticlePart::InlineText::Monospace.new(inline_text)
           end
         end if event_stack
-        self.text_block << inline_text
+        self.text << inline_text
       end
 
       def caption= (caption)

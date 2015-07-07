@@ -15,6 +15,10 @@ module TeiToFo
       def caption?
         not @caption.nil?
       end
+
+      def format(figure_formatter)
+        figure_formatter.format(self)
+      end
       
       def to_s
         "#{self.graphic_basename}\n#{self.label}\n#{self.caption}"

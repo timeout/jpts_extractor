@@ -9,11 +9,11 @@ module TeiToFo
       attr_reader :sections
 
       def title?
-        @title.nil? ? false : @title.empty? ? false : true
+        not self.title.nil?
       end
 
       def paragraph?
-        @paragraph.nil? ? false : true
+        not self.paragraph.nil?
       end
 
       def add_section(subsection)

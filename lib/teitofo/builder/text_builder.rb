@@ -1,20 +1,22 @@
-require 'teitofo/article_part/text_block'
+require 'teitofo/article_part/text'
 require 'teitofo/handler/event_stack'
 require 'teitofo/article_part/inline_text/plain_text'
 require 'teitofo/article_part/inline_text/italic_text'
 require 'teitofo/article_part/inline_text/citation'
 require 'teitofo/article_part/inline_text/super_script_text'
 require 'teitofo/article_part/inline_text/bold_text'
+require 'teitofo/article_part/inline_text/monospace_text'
 
 module TeiToFo
   module Builder
-    class TextBlockBuilder
+    module TextBuilder
       include Handler::EventStack
-      def initialize
-        @text_block = ArticlePart::TextBlock.new
+
+      def text!
+        @text = ArticlePart::Text.new
       end
 
-      attr_reader :text_block
+      attr_reader :text
 
       def create_fragment(text, event_stack)
         inline_text = ArticlePart::InlineText::InlineText.new(text)
@@ -29,10 +31,10 @@ module TeiToFo
           when :sup
             inline_text = ArticlePart::InlineText::SuperScriptText.new(inline_text)
           when :monospace
-            inline_text = ArticlePart::InlineText::Monospace.new(inline_text)
+            inline_text = ArticlePart::InlineText::MonospaceText.new(inline_text)
           end
         end if event_stack
-        @text_block << inline_text
+        @text << inline_text
       end
 
     end

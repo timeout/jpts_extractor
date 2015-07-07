@@ -6,7 +6,7 @@ require 'builder'
 
 RSpec.describe TeiToFo::Formatter::XmlFormatter::TableCell do
   describe '#format' do
-    let(:text_block) { TeiToFo::ArticlePart::TextBlock.new }
+    let(:text) { TeiToFo::ArticlePart::Text.new }
     let(:content) { TeiToFo::ArticlePart::InlineText::InlineText.new('Apolygus lucorum') }
 
     let(:cell) { TeiToFo::ArticlePart::TableCell.new }
@@ -15,8 +15,8 @@ RSpec.describe TeiToFo::Formatter::XmlFormatter::TableCell do
     let(:formatter) { TeiToFo::Formatter::XmlFormatter::TableCell.new(xml) }
 
     it 'formats a table cell' do
-      text_block << TeiToFo::ArticlePart::InlineText::ItalicText.new(content)
-      cell.text_block = text_block
+      text << TeiToFo::ArticlePart::InlineText::ItalicText.new(content)
+      cell.text = text
       cell.add_style :align, 'left'
       cell.add_style :rowspan, '1'
       cell.add_style :colspan, '1'

@@ -15,7 +15,7 @@ module TeiToFo
         push_event(name)
         case name
         when :title, :p
-          self.builder.text_block!
+          self.builder.text!
         end
       end
 

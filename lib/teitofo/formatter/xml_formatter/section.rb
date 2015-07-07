@@ -1,47 +1,40 @@
-require 'teitofo/formatter/xml_formatter/text_block'
-require 'teitofo/formatter/xml_formatter/table_wrap'
+require 'teitofo/formatter/xml_formatter/title_formatter'
+require 'teitofo/formatter/xml_formatter/paragraph_formatter'
+# require 'teitofo/formatter/xml_formatter/table_wrap'
 
 module TeiToFo
   module Formatter
     module XmlFormatter
       class Section
+        include TitleFormatter
+        include ParagraphFormatter
 
         def initialize(xml)
           @xml = xml
-          @text_block_formatter = TextBlock.new(@xml)
-          @table_wrap_formatter = TableWrap.new(@xml)
         end
 
-        attr_reader :xml, :text_block_formatter, :table_wrap_formatter
+        attr_reader :xml
 
         def format(section)
-          format_title(section.title) if section.title?
+
+          p "section class: #{section.class}"
+
+          if section.title?
+            title_formatter(section.title)
+          end
+
           section.each do |subsection|
-            # if subsection.class == ArticlePart::TextBlock
-            #   subsection.format(text_block_formatter)
-            # end
             case subsection
             when TeiToFo::ArticlePart::Section
               subsection.format(self)
-            when TeiToFo::ArticlePart::TextBlock
-              subsection.format(self.text_block_formatter)
+            when TeiToFo::ArticlePart::Text
+              paragraph_formatter(subsection)
             when TeiToFo::ArticlePart::TableWrap
-              subsection.format(self.table_wrap_formatter)
+              # subsection.format(self.table_wrap_formatter)
+            when TeiToFo::ArticlePart::Figure
             else
               #TODO:
             end
-          end
-        end
-
-        private
-        def format_title(abstract_title)
-          @xml.tag!('fo:block', {
-            'margin-top': '8pt',
-            'font-weight': 'bold',
-            'line-height': '16pt',
-            'font-size': '11pt'
-          }) do
-            xml.tag!('fo:inline', {}, abstract_title)
           end
         end
 

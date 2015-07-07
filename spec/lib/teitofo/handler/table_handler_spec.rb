@@ -24,7 +24,7 @@ RSpec.describe TeiToFo::Handler::TableHandler do
       subhandler.on_start_element(:italic)
       subhandler.on_text('influente')
       table_cell = subhandler.cell_handler.builder.table_cell
-      expect(table_cell.text_block.fragments.first.text)
+      expect(table_cell.text.fragments.first.text)
         .to eq('influente')
     end
 
@@ -39,7 +39,7 @@ RSpec.describe TeiToFo::Handler::TableHandler do
       subhandler.on_start_element(:italic)
       subhandler.on_text('influente')
       table_cell = subhandler.cell_handler.builder.table_cell
-      expect(table_cell.text_block.fragments.first.text)
+      expect(table_cell.text.fragments.first.text)
         .to eq('influente')
     end
 

@@ -14,7 +14,7 @@ RSpec.describe TeiToFo::Builder::FigureBuilder do
 
   describe '#label!' do
     it 'builds a label' do
-      builder.text_block!
+      builder.text!
       builder.create_fragment("Don't change the earth!", [])
       builder.create_fragment("Don't change a thing!", [:italic])
       builder.label!

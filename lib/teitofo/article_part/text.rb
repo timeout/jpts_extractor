@@ -2,7 +2,7 @@ require 'teitofo/article_part/inline_text/inline_text'
 
 module TeiToFo
   module ArticlePart
-    class TextBlock
+    class Text
       include Enumerable
 
       attr_reader :fragments
@@ -17,20 +17,6 @@ module TeiToFo
         self
       end
       alias_method :<<, :add_fragment
-
-      def stylish?
-        not @styles.nil?
-      end
-
-      def styles
-        @styles
-      end
-
-      def add_style(key, value)
-        @styles ||= Hash.new
-        @styles[key] = value
-        self
-      end
 
       def format(formatter)
         formatter.format(self)

@@ -19,7 +19,7 @@ module TeiToFo
           switch_text_on
         when :label
           @label = true
-          self.builder.text_block!
+          self.builder.text!
         when :caption
           @caption_handler = CaptionHandler.new
         end

@@ -39,10 +39,6 @@ module TeiToFo
           @ornament_foreground_colour || 'gray'
         end
 
-        #TODO
-        def logo_image
-          @logo_image || 'logo.png'
-        end
       end
     end
   end

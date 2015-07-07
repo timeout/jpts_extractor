@@ -1,5 +1,7 @@
 require 'teitofo/article_part/section'
+require 'teitofo/article_part/text'
 require 'teitofo/article_part/inline_text/inline_text'
+require 'teitofo/article_part/inline_text/bold_text'
 
 RSpec.describe TeiToFo::ArticlePart::Section do
 
@@ -41,15 +43,15 @@ RSpec.describe TeiToFo::ArticlePart::Section do
       this = build(:this)
       important = build(:important)
       bold = build(:bold)
-      text = build(:text)
+      contents = build(:text)
 
-      text_block = TeiToFo::ArticlePart::TextBlock.new
-      text_block.add_fragment(this)
+      text = TeiToFo::ArticlePart::Text.new
+      text.add_fragment(this)
         .add_fragment(TeiToFo::ArticlePart::InlineText::ItalicText.new(important))
         .add_fragment(TeiToFo::ArticlePart::InlineText::BoldText.new(bold))
-        .add_fragment(text)
-      section.add_block text_block
-      section.add_block text_block.dup
+        .add_fragment(contents)
+      section.add_block text
+      section.add_block text.dup
       section.each do |sec|
         expect(sec.to_s).to eq('This is some important bold text')
       end

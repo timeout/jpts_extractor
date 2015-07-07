@@ -117,77 +117,82 @@ RSpec.describe TeiToFo::Handler::ArticleMetaHandler do
 
   describe '== conflict of interest ==' do
 
-    let(:conflict) { 'There is no conflict of interest, but I really needed the money' }
-
-    describe '#on_start_element' do
-      it 'switches on attr' do
-        subhandler.on_start_element :fn
-        expect(subhandler.attr?).to be_truthy
-      end
-
-      it 'delegates to the text_block handler' do
-        subhandler.on_start_element :fn
-        subhandler.on_attr(:'fn-type', 'conflict')
-        subhandler.on_text conflict
-        subhandler.on_end_element :p
-        expect(subhandler.builder.article_meta.conflict.class).to eq(TeiToFo::ArticlePart::TextBlock)
-        expect(subhandler.builder.article_meta.conflict.to_s).to eq( conflict )
-      end
+    it 'switches on attr' do
+      subhandler.on_start_element :fn
+      expect(subhandler.attr?).to be_truthy
     end
 
-    describe '#on_end_element' do
-      it 'switches off attr' do
-        subhandler.on_start_element :fn
-        subhandler.on_end_element :fn
-        expect(subhandler.attr?).to be_falsey
-      end
+    it "on attribute value 'conflict' it sets state to :conflict" do
+      subhandler.on_start_element :fn
+      subhandler.on_attr(:'fn-type', 'conflict')
+      expect(subhandler.state).to be :conflict
     end
 
-    describe '#on_attr' do
-      it 'creates a new text_handler' do
-        subhandler.on_start_element :fn
-        subhandler.on_attr(:'fn-type', 'conflict')
-        expect(subhandler.text_handler.name).to eq(:conflict)
-        expect(subhandler.text_handler.text_block_handler).not_to be_nil
-      end
+    it 'switches off attr' do
+      subhandler.on_start_element :fn
+      subhandler.on_end_element :fn
+      expect(subhandler.attr?).to be_falsey
+    end
+
+    it 'sets state to nil' do
+      subhandler.on_start_element :fn
+      subhandler.on_attr(:'fn-type', 'conflict')
+      expect(subhandler.state).to be :conflict
+      subhandler.on_end_element :fn
+      expect(subhandler.state).to be_nil
+    end
+
+    it 'builds conflict' do
+      subhandler.on_start_element :fn
+      subhandler.on_attr(:'fn-type', 'conflict')
+      subhandler.on_start_element :p
+      subhandler.on_text 'This, that and the other'
+      subhandler.on_end_element :p
+      article_meta = subhandler.builder.article_meta
+      expect(article_meta.conflict.class)
+         .to eq(TeiToFo::ArticlePart::Text)
+      expect(article_meta.conflict.fragments.first.text)
+        .to eq 'This, that and the other'
     end
   end
 
   describe '== conceived ==' do
 
-    let(:conceived) { 'This experiment was conceived by my mum. Good on ya mum!' }
-
-    describe '#on_start_element' do
-      it 'switches on attr' do
-        subhandler.on_start_element :fn
-        expect(subhandler.attr?).to be_truthy
-      end
-
-      it 'delegates to the text_block handler' do
-        subhandler.on_start_element :fn
-        subhandler.on_attr(:'fn-type', 'con')
-        subhandler.on_text conceived
-        subhandler.on_end_element :p
-        expect(subhandler.builder.article_meta.conceived.class).to eq(TeiToFo::ArticlePart::TextBlock)
-        expect(subhandler.builder.article_meta.conceived.to_s).to eq( conceived )
-      end
+    it 'switches on attr' do
+      subhandler.on_start_element :fn
+      expect(subhandler.attr?).to be_truthy
     end
 
-    describe '#on_end_element' do
-      it 'switches off attr' do
-        subhandler.on_start_element :fn
-        subhandler.on_end_element :fn
-        expect(subhandler.attr?).to be_falsey
-      end
+    it "on attribute value 'con' it sets state to :con" do
+      subhandler.on_start_element :fn
+      subhandler.on_attr(:'fn-type', 'con')
+      expect(subhandler.state).to be :con
     end
 
-    describe '#on_attr' do
-      it 'creates a new text_handler' do
-        subhandler.on_start_element :fn
-        subhandler.on_attr(:'fn-type', 'con')
-        expect(subhandler.text_handler.name).to eq(:conceived)
-        expect(subhandler.text_handler.text_block_handler).not_to be_nil
-      end
+    it 'switches off attr' do
+      subhandler.on_start_element :fn
+      subhandler.on_end_element :fn
+      expect(subhandler.attr?).to be_falsey
+    end
+
+    it 'sets state to nil' do
+      subhandler.on_start_element :fn
+      subhandler.on_attr(:'fn-type', 'con')
+      subhandler.on_end_element :fn
+      expect(subhandler.state).to be_nil
+    end
+
+    it 'builds conflict' do
+      subhandler.on_start_element :fn
+      subhandler.on_attr(:'fn-type', 'con')
+      subhandler.on_start_element :p
+      subhandler.on_text 'This, that and the other'
+      subhandler.on_end_element :p
+      article_meta = subhandler.builder.article_meta
+      expect(article_meta.conceived.class)
+        .to eq(TeiToFo::ArticlePart::Text)
+      expect(article_meta.conceived.fragments.first.text)
+        .to eq 'This, that and the other'
     end
   end
 

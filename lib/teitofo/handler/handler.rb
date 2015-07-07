@@ -8,7 +8,6 @@ require 'teitofo/handler/section_handler'
 require 'teitofo/handler/table_wrap_handler'
 require 'teitofo/handler/table_handler'
 require 'teitofo/handler/figure_handler'
-require 'teitofo/handler/text_block_handler'
 require 'teitofo/handler/back_handler'
 require 'teitofo/handler/ref_list_handler'
 require 'teitofo/handler/ref_handler'
@@ -128,8 +127,9 @@ module TeiToFo
 
         raise Exceptions::BadParseError.new unless @stack.top.respond_to? :builder
         # abstract also responds to :<<, trust xml, heh... :S :>>
-        raise Exceptions::BadParseError.new unless @stack
-          .top.builder.respond_to? :<<
+        raise Exceptions::BadParseError.new(
+          "#{@stack.top.builder.class} cannot build product, #{method_name(name)}"
+        ) unless @stack.top.builder.respond_to? :<<
 
         @stack.top.builder << product
       end

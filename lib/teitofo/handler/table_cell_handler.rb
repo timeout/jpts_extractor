@@ -1,4 +1,3 @@
-require 'teitofo/handler/text_block_handler'
 require 'teitofo/handler/subhandler'
 require 'teitofo/builder/table_cell_builder'
 

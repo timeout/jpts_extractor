@@ -1,17 +1,17 @@
-require 'teitofo/article_part/text_block'
+require 'teitofo/article_part/text'
 
 module TeiToFo
   module ArticlePart
     class TableCell
       
       def initialize
-        @text_block = TextBlock.new
+        @text = Text.new
       end
 
-      attr_accessor :text_block
+      attr_accessor :text
 
-      def text_block?
-        self.text_block.fragments?
+      def text?
+        self.text.fragments?
       end
 
       def stylish?

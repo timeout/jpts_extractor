@@ -1,10 +1,15 @@
 require 'teitofo/article_part/article_meta'
+require 'teitofo/builder/text_builder'
 require 'teitofo/article_part/author'
 require 'teitofo/article_part/affiliation'
+
+require 'date'
 
 module TeiToFo
   module Builder
     class ArticleMetaBuilder
+      include TextBuilder
+
       def initialize
         @article_meta = ArticlePart::ArticleMeta.new
       end
@@ -27,20 +32,12 @@ module TeiToFo
         @article_meta.abstract = abstract
       end
 
-      def conflict
-        @article_meta.conflict
+      def conflict!
+        self.article_meta.conflict = self.text
       end
 
-      def conflict= (conflict)
-        @article_meta.conflict ||= conflict
-      end
-
-      def conceived
-        @article_meta.conceived
-      end
-
-      def conceived= (conceived)
-        @article_meta.conceived ||= conceived
+      def conceived!
+        self.article_meta.conceived = self.text
       end
 
       def copyright_year= (year)
@@ -70,10 +67,10 @@ module TeiToFo
       end
 
       def author
-        author = ArticlePart::Author.new(@given_names, @surname, @refs.dup)
+        author = ArticlePart::Author.new(@given_names, @surname, references)
         @authors ||= Array.new
         @authors << author
-        @refs.clear
+        @refs.clear if @refs
       end
 
       def add_author_ref(ref)
@@ -90,6 +87,10 @@ module TeiToFo
           ArticlePart::Affiliation.new(@aff_label, @aff_addr_line))
       end
 
+      private
+      def references
+        @refs.nil? ? nil : @refs.dup
+      end
     end
   end
 end
