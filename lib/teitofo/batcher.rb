@@ -1,5 +1,6 @@
 require 'teitofo/batch_configure'
 require 'teitofo/reader/reader'
+require 'teitofo/formatter/xml_formatter/article'
 
 module TeiToFo
   class Batcher
@@ -24,6 +25,12 @@ module TeiToFo
         handler = Handler::Handler.new
         Ox.sax_parse(handler, Reader.tei_path.open)
         article = handler.article
+        xml_formatter = Formatter::XmlFormatter::Article.new
+        article.format(xml_formatter)
+        # puts xml_formatter.output
+        out_filename = Reader.tei_path.basename.to_s
+        out_filename.gsub! 'xml', 'xsl'
+        File.open(out_filename, 'w') { |file| file.write(xml_formatter.output) }
       end
     end
 

@@ -2,10 +2,10 @@ module TeiToFo
   module ArticlePart
     class Figure
 
-      attr_accessor :graphic_basename, :label, :caption
+      attr_accessor :graphic_path, :label, :caption
 
-      def graphic_basename?
-        not @graphic_basename.nil?
+      def graphic_path?
+        not @graphic_path.nil?
       end
 
       def label?

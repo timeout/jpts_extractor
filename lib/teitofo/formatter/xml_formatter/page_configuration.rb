@@ -8,7 +8,7 @@ module TeiToFo
         end
 
         attr_accessor :page_height, :page_width, :margin_top, 
-          :margin_bottom, :margin_left, :margin_right, :logo_image,
+          :margin_bottom, :margin_left, :margin_right,
           :ornament_foreground_colour
 
         def page_height

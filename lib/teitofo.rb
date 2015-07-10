@@ -20,7 +20,8 @@ module TeiToFo
   # puts xml_formatter.output
 
   batch = Batcher.new do |config|
-    config.corpora_path = Pathname.new('/home/joe/documents/corpora')
+    # config.corpora_path = Pathname.new('/home/joe/documents/corpora')
+    config.corpora_path = Pathname.new('corpora')
   end
   batch.read_articles
   batch.process

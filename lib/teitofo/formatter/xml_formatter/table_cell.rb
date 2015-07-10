@@ -17,9 +17,14 @@ module TeiToFo
         def format(table_cell)
           @xml.tag!('fo:table-cell', {
             'column-number': "#{column_number}",
+            'number-rows-spanned': "#{table_cell.styles[:rowspan]}",
             'number-columns-spanned': "#{table_cell.styles[:colspan]}"
           }) do
-            table_cell.text.format(self.text_formatter)
+            @xml.tag!('fo:block', {
+              'text-align': "#{table_cell.styles[:align]}"
+            }) do
+              table_cell.text.format(self.text_formatter)
+            end 
           end if table_cell.text?
         end
 

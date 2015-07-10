@@ -1,6 +1,8 @@
 require 'teitofo/formatter/xml_formatter/title_formatter'
 require 'teitofo/formatter/xml_formatter/paragraph_formatter'
-# require 'teitofo/formatter/xml_formatter/table_wrap'
+
+require 'teitofo/formatter/xml_formatter/table_wrap'
+require 'teitofo/formatter/xml_formatter/figure'
 
 module TeiToFo
   module Formatter
@@ -17,8 +19,6 @@ module TeiToFo
 
         def format(section)
 
-          p "section class: #{section.class}"
-
           if section.title?
             title_formatter(section.title)
           end
@@ -30,8 +30,9 @@ module TeiToFo
             when TeiToFo::ArticlePart::Text
               paragraph_formatter(subsection)
             when TeiToFo::ArticlePart::TableWrap
-              # subsection.format(self.table_wrap_formatter)
+              TableWrap.new(self.xml).format(subsection)
             when TeiToFo::ArticlePart::Figure
+              Figure.new(self.xml).format(subsection)
             else
               #TODO:
             end

@@ -11,6 +11,7 @@ require 'teitofo/handler/figure_handler'
 require 'teitofo/handler/back_handler'
 require 'teitofo/handler/ref_list_handler'
 require 'teitofo/handler/ref_handler'
+require 'teitofo/handler/acknowledge_handler'
 require 'teitofo/handler/body_handler'
 require 'teitofo/handler/null_handler'
 
@@ -69,6 +70,8 @@ module TeiToFo
           @stack.push(TableHandler.new)
         when :fig
           @stack.push(FigureHandler.new)
+        when :ack
+          @stack.push(AcknowledgeHandler.new)
         when :'ref-list'
           @stack.push(RefListHandler.new)
         when :ref
@@ -86,7 +89,7 @@ module TeiToFo
         when :sec, :'table-wrap', :ref, :fig
           enqueue_product(name)
         when :front, :body, :back, :'journal-meta', :'article-meta', 
-          :abstract, :'ref-list', :table
+          :abstract, :'ref-list', :table, :ack
           assemble_product(name)
         when :article
           raise Exceptions::NullHandlerError.new unless @stack.top.respond_to? :builder

@@ -1,7 +1,6 @@
 require 'teitofo/article_part/figure'
 require 'teitofo/builder/text_builder'
-
-require 'pathname'
+require 'teitofo/reader/reader'
 
 module TeiToFo
   module Builder
@@ -15,8 +14,8 @@ module TeiToFo
       attr_reader :fig
 
       def basename_path(value)
-        path = Pathname.new(value)
-        fig.graphic_basename = path.basename
+        fig.graphic_path = TeiToFo::Reader
+          .graphics_directory + Pathname.new(value).basename.to_s
       end
 
       def label!

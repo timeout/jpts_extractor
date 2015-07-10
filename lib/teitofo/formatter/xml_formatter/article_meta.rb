@@ -1,71 +1,57 @@
-require 'teitofo/formatter/xml_formatter/author'
-require 'teitofo/formatter/xml_formatter/affiliation'
-require 'teitofo/formatter/xml_formatter/abstract'
+require 'teitofo/formatter/xml_formatter/document'
 
 module TeiToFo
   module Formatter
     module XmlFormatter
       class ArticleMeta
+        include Document
 
         def initialize(xml)
           @xml = xml
-          @author_formatter = Author.new(@xml)
-          @affiliation_formatter = Affiliation.new(@xml)
-          @abstract_formatter = Abstract.new(@xml)
         end
 
-        attr_reader :xml, :author_formatter, :affiliation_formatter,
-          :abstract_formatter
+        attr_reader :xml
 
         def format(article_meta)
 
-          xml.tag!('fo:block', {
-            'margin-top': '10mm',
-            'font-size': '10pt'
-          }, article_meta.subject)
+          self.xml.comment! 'subject'
+          format_subject(article_meta.subject)
 
-          xml.comment! 'article_meta title'
-          xml.tag!('fo:block', {
-            'text-align': 'start',
-            'line-height': '24pt',
-            'font-size': '18pt',
-            'font-weight': 'bold'
-          }, article_meta.article_title)
-          xml.comment! 'authors'
-          xml.tag!('fo:block', {
-            'text-align': 'start',
-            'line-height': '15pt',
-            'font-weight': 'bold',
-            'font-size': '10pt'
+          self.xml.comment! 'title'
+          format_title(article_meta.article_title)
+
+          self.xml.comment! 'authors'
+          format_authors(article_meta.authors)
+
+          self.xml.comment! 'affiliation(s)'
+          format_affiliations(article_meta)
+
+          self.xml.comment! 'preface'
+
+          self.xml.tag!('fo:block', {
+            'border-style': 'solid',
+            'border-width': '1.5pt'
           }) do
-            article_meta.each_author do |author|
-              author.format(self.author_formatter)
+            self.xml.comment! 'abstract'
+            format_abstract(article_meta.abstract)
+
+            self.xml.tag!('fo:block', {
+              'font-family': 'DroidSans',
+              'margin-left': '6pt',
+              'margin-right': '6pt',
+              'font-size': '8pt'
+            }) do
+              self.xml.comment! 'article meta information'
+              format_publication_info(article_meta)
+
+              self.xml.comment! 'copyright'
+              format_copyright(article_meta)
+
+              self.xml.comment! 'conflicting interests'
+              format_conflict(article_meta.conflict)
             end
           end
-          xml.comment! 'affiliation(s)'
-          xml.tag!('fo:block', {
-            'text-align': 'justify',
-            'font-size': '8pt'
-          }) do
-            article_meta.each_affiliation do |affiliation|
-              affiliation.format(self.affiliation_formatter)
-            end
-          end
-          xml.comment! 'abstract'
-          xml.tag!('fo:block', {
-            'margin-top': '12mm'
-          }) do 
-            xml.tag!('fo:inline', {
-              'line-height': '18pt',
-              'font-size': '14pt'
-            }, 'Abstract')
-          end
-          xml.tag!('fo:block', {
-            'line-height': 'normal',
-            'font-size': '10pt'
-          }) do
-            article_meta.abstract.format(self.abstract_formatter)
-          end
+
         end
 
       end

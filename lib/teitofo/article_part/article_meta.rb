@@ -8,8 +8,7 @@ module TeiToFo
 
       attr_accessor :subject, :article_title, :abstract, :conflict, 
         :conceived, :published_date, :received_date, :accepted_date,
-        :copyright_year, :copyright_holder
-      attr_writer :authors
+        :copyright_year, :copyright_holder, :authors
 
       def each_author(&block)
         @authors.each(&block)

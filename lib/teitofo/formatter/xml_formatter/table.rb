@@ -16,11 +16,6 @@ module TeiToFo
         def format(table)
           @xml.comment! 'table'
 
-          # TODO:
-          @xml.tag!('fo:block', {
-            'margin-left': '-50pt',
-            'margin-top': '10pt'
-          }) do
             @xml.tag!('fo:block-container', {
               margin: '0pt'
             }) do
@@ -33,7 +28,7 @@ module TeiToFo
                 table.columns.each_with_index do |column, index|
                   @xml.tag!('fo:table-column', {
                     'column-number': "#{index + 1}",
-                    # 'column-width': "proportional-column-width(#{column[:span]})"
+                    'column-width': "proportional-column-width(#{column[:span]})"
                   }) 
                 end
 
@@ -75,7 +70,7 @@ module TeiToFo
                   end
                 end unless table.body_rows.empty?
 
-              end
+           #   end
             end
           end
         end

@@ -21,11 +21,11 @@ module TeiToFo
         :surname, :given_names, :aff_label, :aff_addr_line
 
       def subject= (subject)
-        @article_meta.subject = subject.upcase unless subject.nil?
+        @article_meta.subject = subject
       end
 
-      def article_title= (title)
-        @article_meta.article_title = title.capitalize unless title.nil?
+      def article_title!
+        @article_meta.article_title = self.text
       end
 
       def abstract= (abstract)

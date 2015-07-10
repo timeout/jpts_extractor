@@ -15,11 +15,14 @@ module TeiToFo
       def on_start_element(name)
         push_event(name)
         case name
-        when :subject, :'article-title', :'copyright-year',
+        when :subject, :'copyright-year',
           :'copyright-holder'
           switch_text_on
         when :fn, :'pub-date', :date, :contrib, :aff
           switch_attr_on
+        when :'article-title'
+          self.builder.text!
+          @state = :title
         when :p
           self.builder.text!
         end
@@ -32,8 +35,9 @@ module TeiToFo
           @builder.subject = @text
           switch_text_off
         when :'article-title'
-          @builder.article_title = @text
+          self.builder.article_title! if self.state == :title
           switch_text_off
+          @state = nil
         when :fn
           switch_attr_off
           @state = nil
@@ -95,7 +99,7 @@ module TeiToFo
       end
 
       def on_text(value)
-        self.builder.create_fragment(value, event_stack) if [:con, :conflict].include? self.state
+        self.builder.create_fragment(value, event_stack) if [:con, :conflict, :title].include? self.state
         @text = value if text?
       end
 

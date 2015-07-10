@@ -12,6 +12,10 @@ module TeiToFo
       def ref_list= (ref_list)
         @back.ref_list = ref_list
       end
+
+      def ack= (acknowledge)
+        @back.acknowledge = acknowledge
+      end
     end
   end
 end
