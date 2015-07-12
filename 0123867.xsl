@@ -151,7 +151,7 @@
           </fo:block>
           <!-- copyright -->
           <fo:block padding="4pt">
-            <fo:inline font-weight="bold">Copyright: </fo:inline>
+            <fo:inline font-family="DroidSans" font-weight="bold">Copyright: </fo:inline>
             <fo:inline>© 2015 Neumann et al. This is an open
           access article distributed under the terms of the
           Creative Commons Attribution License, which permits
@@ -167,10 +167,10 @@
         </fo:block>
       </fo:block>
       <!-- body -->
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Introduction</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Migration of leukocytes into tissues is central for immune surveillance and pathogen defence as well as for the pathogenesis of autoimmune diseases. Leukocyte recruitment from the circulation is a tightly regulated multistep process depending on specific interactions between adhesion molecules and chemokine receptors expressed by the leukocytes and their respective ligands on the vascular endothelial cells [</fo:inline>
         <fo:inline>1</fo:inline>
         <fo:inline>,</fo:inline>
@@ -185,7 +185,7 @@
         <fo:inline>6</fo:inline>
         <fo:inline>].</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Chemokines can be generally classified into inflammatory and homeostatic chemokines. Constitutively expressed homeostatic chemokines like the CXC chemokine ligand (CXCL)12 are involved in the control of physiological leukocyte recirculation and in immune surveillance. Inflammatory chemokine expression is induced in inflamed tissues by pro-inflammatory cytokines like interferon (IFN)-γ and consistently controls recruitment of effector cells determining the composition of inflammatory cell infiltrates and the outcome of local inflammation [</fo:inline>
         <fo:inline>7</fo:inline>
         <fo:inline>,</fo:inline>
@@ -198,7 +198,7 @@
         <fo:inline>13</fo:inline>
         <fo:inline>].</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Circulating T cells pass the liver via the sinusoids, a network of small capillaries lined by liver sinusoidal endothelial cells (LSEC). The sinusoidal endothelium is a major route for T-cell entry into the liver parenchyma from where recruited cells can subsequently migrate to sites of inflammation [</fo:inline>
         <fo:inline>14</fo:inline>
         <fo:inline>,</fo:inline>
@@ -209,28 +209,28 @@
         <fo:inline>17</fo:inline>
         <fo:inline>]. Thus, endothelial chemokine supply may be particularly important for T-cell recruitment into the liver.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>We previously showed that LSEC promote chemokine-dependent CD4+ T-cell transmigration </fo:inline>
         <fo:inline font-style="italic">in vitro</fo:inline>
         <fo:inline> [</fo:inline>
         <fo:inline>18</fo:inline>
         <fo:inline>]. In the present study, we addressed molecular mechanisms involved in LSEC-mediated chemokine supply in more detail and analyzed their contribution to the hepatic recruitment of CD4+ T cells during immune surveillance and liver inflammation.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Material and Methods</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Mice</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>C57BL/6 mice were obtained from the Charité animal facility (Berlin, Germany) or Charles River (Wilmington, MA). CXCR3-/- mice [</fo:inline>
         <fo:inline>11</fo:inline>
         <fo:inline>] were kindly provided by PD Dr. Uta Höpken (Department of Tumor Genetics and Immunogenetics, Max-Delbrück-Center for Molecular Medicine, Berlin, Germany). All mouse experiments were conducted according to the German animal protection laws (Landesamt für Gesundheit und Soziales, Berlin, Germany; G 0022/09, G 0336/08, T 0183/07) with approval from the Charité—Universitätsmedizin ethical committee. All mice received humane care according to the national guidelines.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Cell isolation</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>To isolate non-parenchymal cells (NPC), livers were perfused </fo:inline>
         <fo:inline font-style="italic">in situ</fo:inline>
         <fo:inline> with digestion medium containing collagenase IV (Sigma-Aldrich, Steinheim, Germany) injected into the portal vein, excised and further incubated in the digestion medium. To eliminate parenchymal cells, the single-cell suspension was subjected to a one-step density gradient centrifugation with 26% Nycodenz (Progen Biotechnik, Heidelberg, Germany). LSEC were isolated from NPC by magnetic cell sorting using anti-CD146 antibody (ME-9F1; BioLegend, Fell, Germany) as previously described [</fo:inline>
@@ -239,24 +239,24 @@
         <fo:inline>20</fo:inline>
         <fo:inline>]. For transmigration assays, CD4+ T cells were isolated from spleen and lymph nodes using anti-CD4 MicroBeads (Miltenyi Biotec, Bergisch Gladbach, Germany) to a purity of at least 95%. Untouched CD4+ T cells used for homing assays were isolated by CD4+ T Cell Isolation Kit (Miltenyi Biotec) according to the manufacturer’s instruction to a purity of at least 95%.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>FACS analysis</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>NPC were stained with anti-CD4 (RM4-5), anti-CD90.2 (53–2.1), anti-CD69 (H1.2F3; all BD Biosciences, Heidelberg, Germany) or anti-CXCR3 antibody (CXCR3-173; eBiosciences, San Diego, CA). For detection of cytokine-expressing cells, NPC were re-stimulated with phorbol myristate acetate (10 ng/ml) and ionomycin (500 ng/ml) for 4 h with the addition of brefeldin A (10 μg/ml; all Sigma-Aldrich) after 60 min. Cells were fixed with 2% paraformaldehyde. After permeabilization using 0.5% saponin, NPC were stained with anti-IFN-γ antibody (XMG1.2; BD Biosciences). Unspecific binding was blocked with rat immunoglobulin (Dianova, Hamburg, Germany) and anti-CD16/32 antibody (93; BioLegend). LSEC were incubated with AlexaFluor 647-labeled CXCL10 or CXCL12 (both 10 nM; Almac, Craigavon, UK). LSEC were treated with chlorpromazine (CPZ; 30 μM), nystatin (10 μM) or filipin (15 μM) for 10 min and AMD3100 (10 μM; all Sigma-Aldrich) for 60 min, washed and further incubated with the chemokines for 60 min. Data were acquired using a FACS Canto II (BD Biosciences) and analyzed by the FlowJo software (Tree Star, Ashland, OR).</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline font-style="italic">In vitro</fo:inline>
         <fo:inline> activation of LSEC</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline font-style="italic">Ex vivo</fo:inline>
         <fo:inline> isolated LSEC were cultured in the presence of tumor necrosis factor (TNF)-α (10 ng/ml; ImmunoTools, Friesoythe, Germany) and IFN-γ (20 ng/ml; R&amp;amp;D Systems, Wiesbaden, Germany) for 24 h. Adhered cells were detached by accutase treatment (Sigma-Aldrich).</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Transfection of LSEC</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>The expression vector Clathrin-LCa-EYFP (Addgene plasmid 21741) was provided by Chen Chen (Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA) [</fo:inline>
         <fo:inline>21</fo:inline>
         <fo:inline>]; CAV1-mEGFP (Addgene plasmid 27704) by Arnold Hayer (ETH Zurich, Institute of Biochemistry, Zurich, Switzerland) [</fo:inline>
@@ -267,18 +267,18 @@
         <fo:inline>23</fo:inline>
         <fo:inline>], LSEC were subjected to continuously combined high voltage (400 V/400 μs) and low voltage (150 V/20 ms) pulses. Immediately after pulse application, LSEC were transferred into pre-warmed Dulbecco's Modified Eagle Medium (Life Technologies, Carlsbad, CA) containing 10% fetal calf serum and were incubated at 37°C for 48 h.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Real-time quantitative RT-PCR analysis</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Total RNA was isolated from liver samples or LSEC by single-phase organic extraction (RNAPure; Peqlab, Erlangen, Germany) and 100 ng RNA was reversely transcribed into cDNA using the High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems, Darmstadt, Germany). Quantitative PCR was performed using a TaqMan Universal Master Kit and exon-spanning, gene-specific assays (CXCL9, Mm00434946_m1; CXCL10, Mm00445235_m1; CXCL12, Mm00445553_m1; CXCR4, Mm01292123_m1; CXCR3, Mm00438259_m1; GAPDH, Mm03302249_g1; Applied Biosystems, Darmstadt, Germany) in a StepOne Plus real-time PCR system (Applied Biosystems). Specific chemokine and chemokine receptor mRNA expression was quantified in relation to Glyceraldehyde 3-phosphate dehydrogenase (GAPDH) as the housekeeping gene using the ΔΔCT method [</fo:inline>
         <fo:inline>24</fo:inline>
         <fo:inline>].</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Transmigration assay</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>LSEC were cultured overnight on gelatine-coated transwell membranes with a 5 μm pore size (Corning, Sigma-Aldrich) to form confluent cell layers [</fo:inline>
         <fo:inline>18</fo:inline>
         <fo:inline>]. LSEC were treated with the specific clathrin inhibitor CPZ (30 μM) [</fo:inline>
@@ -289,46 +289,46 @@
         <fo:inline>27</fo:inline>
         <fo:inline>] added to the lower chamber of the transwell for 10 min (CPZ, nystatin, filipin) or 60 min (AMD3100). After washing, LSEC layers were pre-incubated with the chemokine (CXCL12, 50 nM; CXCL9, CXCL10, both 100 nM; all R&amp;amp;D Systems) applied to the lower chamber of the transwell for 120 min. After removal of the chemokine, 5x105 total CD4+ T cells were added to the upper chamber of the transwell and were allowed to transmigrate across the LSEC layer for 90 min. Transmigrated cells from the lower chamber or from the input were mixed with Fluoresbrite beads (Polysciences, Eppelheim, Germany), stained with anti-CD4 (GK1.5) and anti-CD45RB antibody (16A; both BD Biosciences) and analyzed by flow cytometry. Absolute cell numbers were determined by gating on CD4+ for total or CD45RBlow CD4+ for effector/memory CD4+ T cells in relation to defined numbers of beads.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Confocal laser scanning microscopy</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>LSEC were cultured overnight on transwell inserts. AlexaFluor 647-labeled CXCL12 and CXCL10 (both 50 nM) or AlexaFluor 488-labeled acetylated-low density lipoprotein (AcLDL; 10 μg/ml; Life Technologies) were added to the lower chamber of the transwell for indicated times. Subsequently, LSEC were fixed with 4% paraformaldehyde (Sigma-Aldrich) and stained with mouse anti-clathrin (3F133), mouse anti-caveolin-1 (7C8; both Santa Cruz Biotechnology, Santa Cruz, CA), rabbit anti-early endosome antigen (EEA)1 (C45B10; Cell Signaling Technology, Danvers, MA), rabbit anti-green fluorescent protein (GFP), rabbit anti-transferrin receptor (TfR) and rat anti-lysosomal-associated membrane protein (LAMP)-1 (1D4B; all Abcam, Cambridge, UK) antibody followed by AlexaFluor 488-conjugated anti-mouse, AlexaFluor 647-labeled anti-rat, AlexaFluor 488-conjugated anti-rabbit or anti-rat (all Live Technologies, Karlsruhe, Germany) secondary antibody. Negative controls were performed by omitting the primary antibodies. Nuclei were stained with 4',6-diamidino-2-phenylindole (DAPI) (Roche, Grenzach-Whylen, Germany). LSEC were treated with CPZ (30 μM), filipin (15 nM), nystatin (10 nM) or AMD3100 (10 μM) added to the lower chamber for 10 min (CPZ, nystatin, filipin) or 60 min (AMD3100). LSEC were washed, followed by chemokine incubation (60 min) as described above. Images were taken with an LSM 510 Meta confocal laser scanning microscope (Carl Zeiss MicroImaging, Heidelberg, Germany).</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Immunohistochemistry and immunofluorescence</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>To quantify T-cell infiltration, paraffin-embedded liver sections were stained with rabbit anti-CD3 antibody (N1580; Dako, Hamburg, Germany) followed by anti-rabbit secondary antibody (Dianova, Hamburg, Germany) and the Streptavidin-Alkaline Phosphatase Kit (Dako) using Fast Red as chromogen. All CD3+ cells per high power field (hpf) and three hpf per liver sample were counted. For immunofluorescence, shock-frozen liver tissue was cut into 4 μm sections and stained with rat anti-CD146 antibody followed by AlexaFluor 488-labeled anti-rat secondary antibody (Dianova). Subsequently, liver sections were stained with rabbit anti-CXCL9 (Santa Cruz Biotechnology) followed by AlexaFluor 455-labeled anti-rabbit secondary antibody (Dianova). Negative controls were performed by omitting the primary antibodies. Images were taken with an AxioImager Z1 microscope and processed with Axiovision software (Carl Zeiss MicroImaging).</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Hepatitis induction and CPZ treatment</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Concanavalin (Con) A (20 mg/kg; Sigma-Aldrich) was injected intravenously to induce T cell-mediated hepatitis in C57BL/6 mice. CPZ (3 mg/kg) was intraperitoneally administered 60 min after Con A-treatment. Blood was drawn from individual mice to monitor progression of hepatitis. Liver injury was quantified by automated measurement of plasma activities of alanin transaminase (ALT) using a Roche modular analyzer.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline font-style="italic">In vivo</fo:inline>
         <fo:inline> homing assay</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Mice received CPZ 7 h after Con A treatment. Radioactively labeled CD4+ T cells (1x106; 20 μCi 51Cr; GE Healthcare, Munich, Germany) were intravenously injected 120 min after administration of CPZ. After 60 min migration time, the radioactivity of the liver and the remaining body was counted using a Wizard gamma counter (Wallac, Turku, Finland). The percentage of organ-specific radioactivity in relation to the total recovered radioactivity reflected the percentage of cells that have migrated into the respective organ [</fo:inline>
         <fo:inline>28</fo:inline>
         <fo:inline>].</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Data analysis</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Data were analyzed and statistical significance was determined using the GraphPad Prism software (San Diego, CA). Statistical comparison was carried out using the nonparametric two-tailed Mann-Whitney test.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Results</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Hepatic expression of the inflammatory chemokines CXCL9 and CXCL10 is strongly increased during T cell-mediated hepatitis</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline font-style="italic">In situ</fo:inline>
         <fo:inline> production, transport and presentation of chemokines in the liver are crucial for the hepatic recruitment of circulating T cells [</fo:inline>
         <fo:inline>10</fo:inline>
@@ -351,10 +351,10 @@
           <fo:external-graphic src="corpora/0123867/graphics/journal.pone.0123867.g001"/>
         </fo:block>
       </fo:block-container>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>LSEC express and internalize homeostatic and inflammatory chemokines</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Endothelial chemokine expression or internalization of chemokines produced by other liver cells can account for the presence of chemokines in LSEC. We studied the expression of homeostatic and inflammatory chemokines in LSEC by quantitative RT-PCR analysis. In resting LSEC, we detected expression of CXCL12 mRNA but not of CXCL9 and CXCL10 mRNA. Establishing inflammatory conditions </fo:inline>
         <fo:inline font-style="italic">in vitro</fo:inline>
         <fo:inline>, LSEC were activated with TNF-α and IFN-γ. Activated LSEC markedly down-regulated CXCL12 whereas CXCL9 and CXCL10 expression was strongly increased (</fo:inline>
@@ -366,7 +366,7 @@
           <fo:external-graphic src="corpora/0123867/graphics/journal.pone.0123867.g002"/>
         </fo:block>
       </fo:block-container>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>To analyze chemokine uptake, we incubated LSEC with fluorochrome-labeled CXCL12 or CXCL10 and determined the intracellular fluorescence intensity by flow cytometry (</fo:inline>
         <fo:inline>Fig 2B</fo:inline>
         <fo:inline>). We showed a time-dependent internalization of both chemokines at 37°C that was absent at 4°C (</fo:inline>
@@ -375,13 +375,13 @@
         <fo:inline>Fig 2D</fo:inline>
         <fo:inline>).</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>In summary, LSEC expressed and internalized homeostatic as well as inflammatory chemokines.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>LSEC internalize CXCL12 via CXCR4-mediated endocytosis</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Chemokines are bound by their corresponding receptors and we asked whether LSEC take up chemokines by receptor-mediated endocytosis. Resting LSEC expressed CXCR4, the receptor for CXCL12, which was strongly decreased after treatment with TNF-α and IFN-γ. In contrast, levels of CXCR3 mRNA were very low in resting LSEC and not increased under inflammatory conditions (</fo:inline>
         <fo:inline>Fig 3A</fo:inline>
         <fo:inline>). Blockage of CXCR4 by the specific antagonist AMD3100 inhibited CXCL12 internalisation in LSEC (Fig </fo:inline>
@@ -401,13 +401,13 @@
           <fo:external-graphic src="corpora/0123867/graphics/journal.pone.0123867.g003" content-width="160mm"/>
         </fo:block>
       </fo:block-container>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>These data demonstrate that LSEC internalized CXCL12 via CXCR4-mediated endocytosis leading to enhanced CD4+ T-cell transmigration whereas CXCL10 facilitated transmigration of effector/memory CD4+ T cells but its endothelial uptake was independent of the specific receptor.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>LSEC internalize chemokines in clathrin-coated vesicles</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Clathrin-dependent endocytosis and caveolae are the two major pathways mediating internalization and sorting of extracellular molecules [</fo:inline>
         <fo:inline>31</fo:inline>
         <fo:inline>]. To define the pathway by which LSEC internalize chemokines, LSEC were basolaterally incubated with CXCL12 and stained for clathrin or caveolin-1. CXCL12 co-localized with clathrin but not with caveolin-1 (</fo:inline>
@@ -421,7 +421,7 @@
           <fo:external-graphic src="corpora/0123867/graphics/journal.pone.0123867.g004"/>
         </fo:block>
       </fo:block-container>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>LSEC were treated with the caveolae-specific inhibitors nystatin or filipin or with the specific clathrin inhibitor CPZ prior to basolateral chemokine incubation. Neither nystatin nor filipin affected the uptake of CXCL12 or CXCL10 in LSEC. In contrast, CPZ-treated LSEC were strongly impaired in their ability to internalize both chemokines (Fig </fo:inline>
         <fo:inline>4C</fo:inline>
         <fo:inline> and </fo:inline>
@@ -434,13 +434,13 @@
         <fo:inline>Fig 4G</fo:inline>
         <fo:inline>).</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>In summary, the clathrin pathway proved crucial in LSEC-mediated chemokine transfer to CD4+ T cells.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>LSEC transfer internalized chemokines to early endosomes but not to recycling endosomes or lysosomes</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>To further determine molecular mechanisms involved in endothelial chemokine transport, we performed co-localization studies of chemokines and components of the endocytic pathway. We identified early endosomes and recycling endosomes by staining with antibodies specific for EEA1 [</fo:inline>
         <fo:inline>32</fo:inline>
         <fo:inline>] and TfR [</fo:inline>
@@ -466,173 +466,177 @@
           <fo:external-graphic src="corpora/0123867/graphics/journal.pone.0123867.g005"/>
         </fo:block>
       </fo:block-container>
-      <!-- table -->
-      <fo:block-container margin="0pt">
-        <fo:table width="100%">
+      <fo:block padding-left="9pt" border-left-style="solid" border-width="1.5pt">
+        <fo:block padding-top="6pt" padding-bottom="6pt" font-size="9pt">
+          <!-- caption -->
+          <!-- title -->
+          <fo:inline font-weight="bold">Co-localization of CXCL10 and CXCL12 with EEA1 in LSEC.</fo:inline>
+          <!-- paragraph -->
+        </fo:block>
+        <fo:table width="100%" table-layout="fixed" padding-top="6pt">
           <!-- columns -->
-          <fo:table-column column-number="1" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="2" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="3" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="4" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="5" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="6" column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(2)"/>
           <!-- header -->
-          <fo:table-header line-height="15pt" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
+          <fo:table-header line-height="1.5" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
             <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Chemokine</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Time (min)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Cell #</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="2">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="2">
                 <fo:block text-align="center">
                   <fo:inline># vesicles per cell</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="2" number-columns-spanned="1">
-                <fo:block text-align="left">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
+                <fo:block text-align="right">
                   <fo:inline>Co-localization with EEA1 (%)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
             <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>red</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
-                <fo:block text-align="left">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
+                <fo:block text-align="right">
                   <fo:inline>yellow</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
           </fo:table-header>
-          <!-- body -->
-          <fo:table-body font-size="8pt" line-height="12pt" text-align="left">
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="2" number-columns-spanned="1">
+          <fo:table-body font-size="8pt" line-height="1.5" text-align="left">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>CXCL10</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>15</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>91</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>10 (5; 15)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>7 (3.5; 10)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>75 (61.8; 88.6)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>30</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>85</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>10 (6; 13)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>4 (2; 6)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>38.9 (21.1; 55.6)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="2" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>CXCL12</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>15</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>106</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>8 (6; 13)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>6 (4; 9)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>75 (66.7; 87.5)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5" border-color="gray" border-width="1pt" border-after-style="solid">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>30</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>105</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>12 (7; 17)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>5 (3; 8)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>43.5 (28.6; 59.1)</fo:inline>
                 </fo:block>
@@ -640,120 +644,124 @@
             </fo:table-row>
           </fo:table-body>
         </fo:table>
-      </fo:block-container>
-      <!-- table -->
-      <fo:block-container margin="0pt">
-        <fo:table width="100%">
+      </fo:block>
+      <fo:block padding-left="9pt" border-left-style="solid" border-width="1.5pt">
+        <fo:block padding-top="6pt" padding-bottom="6pt" font-size="9pt">
+          <!-- caption -->
+          <!-- title -->
+          <fo:inline font-weight="bold">Co-localization of CXCL10 and CXCL12 with TfR in LSEC.</fo:inline>
+          <!-- paragraph -->
+        </fo:block>
+        <fo:table width="100%" table-layout="fixed" padding-top="6pt">
           <!-- columns -->
-          <fo:table-column column-number="1" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="2" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="3" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="4" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="5" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="6" column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(2)"/>
           <!-- header -->
-          <fo:table-header line-height="15pt" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
+          <fo:table-header line-height="1.5" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
             <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Chemokine</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Time (min)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Cell #</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="2">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="2">
                 <fo:block text-align="center">
                   <fo:inline># vesicles per cell</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="2" number-columns-spanned="1">
-                <fo:block text-align="left">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
+                <fo:block text-align="right">
                   <fo:inline>Co-localization with TfR (%)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
             <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>red</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
-                <fo:block text-align="left">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
+                <fo:block text-align="right">
                   <fo:inline>yellow</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
           </fo:table-header>
-          <!-- body -->
-          <fo:table-body font-size="8pt" line-height="12pt" text-align="left">
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+          <fo:table-body font-size="8pt" line-height="1.5" text-align="left">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>CXCL10</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>30</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>97</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>11 (7; 15)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 1)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 9.5)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5" border-color="gray" border-width="1pt" border-after-style="solid">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>CXCL12</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>30</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>102</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>10 (7.5; 15)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 1)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 10)</fo:inline>
                 </fo:block>
@@ -761,233 +769,237 @@
             </fo:table-row>
           </fo:table-body>
         </fo:table>
-      </fo:block-container>
-      <!-- table -->
-      <fo:block-container margin="0pt">
-        <fo:table width="100%">
+      </fo:block>
+      <fo:block padding-left="9pt" border-left-style="solid" border-width="1.5pt">
+        <fo:block padding-top="6pt" padding-bottom="6pt" font-size="9pt">
+          <!-- caption -->
+          <!-- title -->
+          <fo:inline font-weight="bold">Co-localization of CXCL10, CXCL12 and AcLDL with LAMP-1 in LSEC.</fo:inline>
+          <!-- paragraph -->
+        </fo:block>
+        <fo:table width="100%" table-layout="fixed" padding-top="6pt">
           <!-- columns -->
-          <fo:table-column column-number="1" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="2" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="3" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="4" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="5" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="6" column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(3)"/>
           <!-- header -->
-          <fo:table-header line-height="15pt" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
+          <fo:table-header line-height="1.5" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
             <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Reagent</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Time (min)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Cell #</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="2">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="2">
                 <fo:block text-align="center">
                   <fo:inline># vesicles per cell</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="2" number-columns-spanned="1">
-                <fo:block text-align="left">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
+                <fo:block text-align="right">
                   <fo:inline>Co-localization with LAMP-1 (%)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
             <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>red/green</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
-                <fo:block text-align="left">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
+                <fo:block text-align="right">
                   <fo:inline>yellow</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
           </fo:table-header>
-          <!-- body -->
-          <fo:table-body font-size="8pt" line-height="12pt" text-align="left">
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="2" number-columns-spanned="1">
+          <fo:table-body font-size="8pt" line-height="1.5" text-align="left">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>CXCL10</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>60</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>96</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>12 (7.8; 18)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 1)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 6.4)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>120</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>73</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>10 (6; 20)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 1)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 6.3)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="2" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>CXCL12</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>60</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>97</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>13 (7; 17)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 1)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 5.9)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>120</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>79</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>14 (9; 20)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 1)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 6.9)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>AcLDL</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>60</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>37</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>18 (11; 24)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 1)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 3.3)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5" border-color="gray" border-width="1pt" border-after-style="solid">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>120</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>28</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>16.5 (10; 20)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 1)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0 (0; 5.9)</fo:inline>
                 </fo:block>
@@ -995,8 +1007,8 @@
             </fo:table-row>
           </fo:table-body>
         </fo:table>
-      </fo:block-container>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      </fo:block>
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Interestingly, basolaterally internalized AcLDL, a protein that usually ends up in the lysosome [</fo:inline>
         <fo:inline>35</fo:inline>
         <fo:inline>], also did not co-localize with LAMP-1 in LSEC after 60 min and 120 min of incubation (</fo:inline>
@@ -1009,173 +1021,177 @@
         <fo:inline>Table 4</fo:inline>
         <fo:inline>).</fo:inline>
       </fo:block>
-      <!-- table -->
-      <fo:block-container margin="0pt">
-        <fo:table width="100%">
+      <fo:block padding-left="9pt" border-left-style="solid" border-width="1.5pt">
+        <fo:block padding-top="6pt" padding-bottom="6pt" font-size="9pt">
+          <!-- caption -->
+          <!-- title -->
+          <fo:inline font-weight="bold">Co-localization of CXCL10 and CXCL12 with AcLDL in LSEC.</fo:inline>
+          <!-- paragraph -->
+        </fo:block>
+        <fo:table width="100%" table-layout="fixed" padding-top="6pt">
           <!-- columns -->
-          <fo:table-column column-number="1" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="2" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="3" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="4" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="5" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="6" column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(2)"/>
           <!-- header -->
-          <fo:table-header line-height="15pt" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
+          <fo:table-header line-height="1.5" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
             <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Chemokine</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Time (min)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="2" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Cell #</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="2">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="2">
                 <fo:block text-align="center">
                   <fo:inline># vesicles per cell</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="2" number-columns-spanned="1">
-                <fo:block text-align="left">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
+                <fo:block text-align="right">
                   <fo:inline>Co-localization with AcLDL (%)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
             <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>red</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
-                <fo:block text-align="left">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
+                <fo:block text-align="right">
                   <fo:inline>yellow</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
           </fo:table-header>
-          <!-- body -->
-          <fo:table-body font-size="8pt" line-height="12pt" text-align="left">
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="2" number-columns-spanned="1">
+          <fo:table-body font-size="8pt" line-height="1.5" text-align="left">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>CXCL10</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>60</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>87</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>8 (5.5; 12.5)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>7 (5; 11.5)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>90.9 (81.7; 100)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>60 + 60</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>94</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>10 (7; 14)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>10 (6.3; 13.8)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>100 (91.1; 100)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="2" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="2" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>CXCL12</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>60</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>81</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>7 (5; 11)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>7 (5; 10)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>100 (92.9; 100)</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5" border-color="gray" border-width="1pt" border-after-style="solid">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>60 + 60</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>83</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>9 (6; 12)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>8 (5.5; 11)</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>100 (88.9; 100)</fo:inline>
                 </fo:block>
@@ -1183,18 +1199,18 @@
             </fo:table-row>
           </fo:table-body>
         </fo:table>
-      </fo:block-container>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      </fo:block>
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Recruitment of CD4+ T cells into the inflamed liver is decreased after administration of CPZ</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>During liver inflammation, the rate of T-cell recruitment via the sinusoidal endothelium strongly increases [</fo:inline>
         <fo:inline>36</fo:inline>
         <fo:inline>]. Having shown </fo:inline>
         <fo:inline font-style="italic">in vitro</fo:inline>
         <fo:inline> that CPZ affects endothelial chemokine transfer leading to reduced transmigration of CD4+ T cells across LSEC layer we asked whether CPZ also influences CD4+ T-cell recruitment to the inflamed liver.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>To induce hepatic inflammation, mice were treated with Con A and received CPZ 7 h later, a time point when hepatitis was established (see </fo:inline>
         <fo:inline>Fig 1B</fo:inline>
         <fo:inline>). Radioactively labeled CD4+ T cells were transferred into the mice and their immigration into the liver was assessed by an </fo:inline>
@@ -1208,10 +1224,10 @@
           <fo:external-graphic src="corpora/0123867/graphics/journal.pone.0123867.g006"/>
         </fo:block>
       </fo:block-container>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Accumulation of CXCR3+ CD4+ T cells in the inflamed liver is reduced after administration of CPZ</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>During autoimmune hepatitis, activated T cells accumulate within the liver. We again used the model of Con A-induced T cell-mediated hepatitis to study the effect of interfering with the clathrin pathway on hepatic T-cell infiltration during liver inflammation. Mice were treated with Con A and received CPZ 60 min after hepatitis induction, a time point when migration of activated T cells to the liver has not yet taken place. One day after hepatitis induction, liver tissue was stained with an anti-CD3 antibody to identify T cells. We showed a strong hepatic accumulation of CD3+ T cells around the portal areas during liver inflammation. This T-cell accumulation was significantly decreased after administration of CPZ (</fo:inline>
         <fo:inline>Fig 7A</fo:inline>
         <fo:inline>). Arguing against direct effects of CPZ on T-cell activation </fo:inline>
@@ -1225,7 +1241,7 @@
           <fo:external-graphic src="corpora/0123867/graphics/journal.pone.0123867.g007" content-width="160mm"/>
         </fo:block>
       </fo:block-container>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>We also tested the effect of CPZ on chemokine-dependent T-cell infiltration during liver inflammation. We quantified the fraction of hepatic CD4+ T cells expressing CXCR3, the receptor for CXCL9 and CXCL10 that were strongly up-regulated at an early stage of Con A-induced hepatitis (see </fo:inline>
         <fo:inline>Fig 1A</fo:inline>
         <fo:inline>). The percentage of CXCR3+ CD4+ T cells significantly increased in the inflamed livers of Con A-treated mice compared to those of healthy mice. Interestingly, in mice that received CPZ the percentage of hepatic CXCR3+ CD4+ T cells was significantly reduced (</fo:inline>
@@ -1234,10 +1250,10 @@
         <fo:inline font-style="italic">in vivo</fo:inline>
         <fo:inline>.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Discussion</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>T-cell migration into the liver tissue is a major factor determining the pathogenesis of hepatic inflammation. Hepatic expression of CXCR3 ligands is strongly induced in many inflammatory liver diseases [</fo:inline>
         <fo:inline>10</fo:inline>
         <fo:inline>–</fo:inline>
@@ -1258,7 +1274,7 @@
         <fo:inline font-style="italic">in vitro</fo:inline>
         <fo:inline>, LSEC expressed CXCL9 and CXCL10 further emphasizing the finding that LSEC contribute to the reservoir of chemokines that are expressed during liver inflammation.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Beside chemokine expression LSEC were able to actively internalize basolateral chemokines which may be secreted by other cell types of the subadjacent liver tissue. Perivascularly expressed chemokines can be transported across the endothelium [</fo:inline>
         <fo:inline>42</fo:inline>
         <fo:inline>,</fo:inline>
@@ -1281,7 +1297,7 @@
         <fo:inline>54</fo:inline>
         <fo:inline>] thus, CXCR4-dependent endothelial CXCL12 transport may also play a role in the pathogenesis of chronic liver infections.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>In contrast to endothelial CXCL12 internalization which strictly depended on CXCR4, LSEC did not express CXCR3 and CXCL10 was internalized independently of its receptor. Another study reported expression of CXCR3 by dermal and lung microvessel endothelium but also in this case the uptake of CXCL10 was not receptor dependent [</fo:inline>
         <fo:inline>50</fo:inline>
         <fo:inline>]. Together with the fact that CXCR3 expression in LSEC was also not induced under inflammatory conditions, where endothelial transport of inflammatory chemokines may be of particular importance, our data emphasize the assumption that mechanisms relating to CXCL9/10-induced signal transduction in leukocytes are different from those used for endothelial trafficking. CXCR4 mediates both CXCL12-triggered signal transduction in motile leukocytes as well as transport of CXCL12 across an endothelium. In contrast, the main function of CXCR3 seems to be signal transduction in leukocytes in order to induce their recruitment to sites of inflammation whereas endothelial transport of its ligands is mediated by other, so far not identified molecular mechanisms. The non-signaling chemokine receptor Duffy antigen receptor is expressed on endothelial cells and erythrocytes and binds chemokines of the CC and CXC family but not CXCL12. It has been shown that the functional outcome of chemokine binding by Duffy antigen receptor for chemokines is transcytosis [</fo:inline>
@@ -1294,7 +1310,7 @@
         <fo:inline>58</fo:inline>
         <fo:inline>] and the balance of the cells recruited will determine the outcome of the liver disease.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Chemokine receptors undergo ligand-induced internalization through clathrin-mediated endocytosis [</fo:inline>
         <fo:inline>47</fo:inline>
         <fo:inline>,</fo:inline>
@@ -1305,14 +1321,14 @@
         <fo:inline>25</fo:inline>
         <fo:inline>]. Focussing on this aspect of CPZ action, treatment of LSEC with CPZ inhibited internalization of both CXCL12 and CXCL10 and significantly decreased chemokine-dependent transmigration of CD4+ T cells across the LSEC layer. The clathrin-dependent internalization and presentation of CXCL9 and CXCL10 in CXCR3-/- LSEC further support the assumption that a so far not identified receptor is involved in the transport of the CXCR3 ligands across endothelial cells.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Several intracellular pathways regulate the fate of proteins after their internalization. Co-localization studies in LSEC showed that internalized chemokines were transferred to clathrin-coated vesicles but not to caveolae. Corresponding to this finding, inhibition of caveolae in LSEC neither affected chemokine internalization nor chemokine-dependent CD4+ T-cell transmigration. Endothelial chemokine transport has been described to be mediated by either caveolae or clathrin-coated vesicles dependent on the type of endothelium [</fo:inline>
         <fo:inline>47</fo:inline>
         <fo:inline>,</fo:inline>
         <fo:inline>49</fo:inline>
         <fo:inline>]. We excluded caveolae and demonstrated that LSEC used the clathrin pathway for chemokine transport. We also showed that CXCL12 and CXCL10 were transferred to EEA1+ early endosomes shortly after internalization, an endocytic compartment downstream of the clathrin-mediated uptake. Both chemokines left the early endosomes again but neither co-localized with LAMP-1 nor with TfR suggesting that LSEC did not primarily transfer basolaterally internalized chemokines to the lysosomes for degradation or to the recycling endosomes to return them back to the basolateral plasma membrane. Moreover, AcLDL, a protein that is internalized via scavenger receptors and usually degraded after internalization, was also not transferred to the lysosomes and co-localized with the chemokines in LSEC. On the basis of these data, we assume that the liver sinusoidal endothelium mainly transported perivascularly produced proteins like chemokines to the blood-endothelial interface. The striking co-localization of chemokines and AcLDL in LSEC suggests that scavenger receptors might be involved in endothelial chemokine supply. We found no evidence that the type of chemokine to be transported through the endothelial cell layer is selected. Thus, the pattern of chemokines presented by LSEC seems to depend on the chemokine pool produced by liver resident cells which differs under homeostatic and inflammatory conditions.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Having demonstrated that inhibition of the clathrin pathway by CPZ reduced the chemokine-dependent transmigration of CD4+ T cells </fo:inline>
         <fo:inline font-style="italic">in vitro</fo:inline>
         <fo:inline> we also analyzed whether CPZ affects T-cell migration into the liver </fo:inline>
@@ -1325,15 +1341,15 @@
         <fo:inline font-style="italic">in vitro</fo:inline>
         <fo:inline> data suggested CPZ as a suitable model substance for this first study on the impact of clathrin inhibition on the course of liver inflammation.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>In summary, the data presented here indicate that the liver sinusoidal endothelium, which acts as an anatomical barrier between the liver parenchyma and the blood circulation, contains an intracellular transport system for the transfer of tissue-expressed chemokines across this barrier in order to induce local recruitment of circulating T cells. We identified CXCR4- and clathrin-dependent intracellular transport mechanisms involved in LSEC-mediated chemokine transport to CD4+ T cells and demonstrated that inhibition of these processes diminished chemokine-dependent CD4+ T-cell transmigration </fo:inline>
         <fo:inline font-style="italic">in vitro</fo:inline>
         <fo:inline>. Our data showing that the inflammation-induced recruitment of effector CD4+ T cells into the inflamed liver can be modified by treatment with a clathrin inhibitor led us to the assumption that endothelial chemokine supply by transcytosis or production plays an important role in the regulation of local inflammation. In this light, it is tempting to speculate that interventions in these processes during liver inflammation could be a target for inhibition of lymphocyte infiltration thereby counteracting immunopathology.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Hepatic T-cell activation after administration of CPZ.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Mice were treated with Con A and received CPZ 60 min after hepatitis induction. NPC isolated 6 h after Con A treatment and stained for CD4, CD90.2, CD69 and IFN-γ were assessed by flow cytometry. (A) GMFI of CD69 was determined on gated CD90.2</fo:inline>
         <fo:inline vertical-align="super" font-size="8pt">+</fo:inline>
         <fo:inline> or CD4</fo:inline>
@@ -1344,7 +1360,7 @@
         <fo:inline vertical-align="super" font-size="8pt">+</fo:inline>
         <fo:inline> T cells expressing IFN-γ were detected. Representative plots and mean values ± SD of 2–4 independent experiments with three mice per group are shown. * p&amp;lt; 0.05; ns, not significant.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>(TIF)</fo:inline>
       </fo:block>
       <!-- back -->

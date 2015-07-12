@@ -7,10 +7,10 @@ module TeiToFo
 
         def title_formatter(text)
           self.xml.tag!('fo:block', {
-            # format style for titles
-            'font-size': '9pt',
             'font-family': 'DroidSans',
-            'font-weight': 'bold'
+            'font-size': '11pt',
+            'font-weight': 'bold',
+            'padding-top': '9pt'
           }) do
             text.format(Text.new(self.xml))
           end

@@ -1,6 +1,4 @@
-require 'teitofo/formatter/xml_formatter/title_formatter'
-require 'teitofo/formatter/xml_formatter/paragraph_formatter'
-
+require 'teitofo/formatter/xml_formatter/document'
 require 'teitofo/formatter/xml_formatter/table_wrap'
 require 'teitofo/formatter/xml_formatter/figure'
 
@@ -8,8 +6,7 @@ module TeiToFo
   module Formatter
     module XmlFormatter
       class Section
-        include TitleFormatter
-        include ParagraphFormatter
+        include Document
 
         def initialize(xml)
           @xml = xml
@@ -20,7 +17,7 @@ module TeiToFo
         def format(section)
 
           if section.title?
-            title_formatter(section.title)
+            format_section_title(section.title)
           end
 
           section.each do |subsection|
@@ -28,7 +25,7 @@ module TeiToFo
             when TeiToFo::ArticlePart::Section
               subsection.format(self)
             when TeiToFo::ArticlePart::Text
-              paragraph_formatter(subsection)
+              format_paragraph(subsection)
             when TeiToFo::ArticlePart::TableWrap
               TableWrap.new(self.xml).format(subsection)
             when TeiToFo::ArticlePart::Figure

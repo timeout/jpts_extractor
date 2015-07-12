@@ -115,7 +115,7 @@
           </fo:block>
           <!-- copyright -->
           <fo:block padding="4pt">
-            <fo:inline font-weight="bold">Copyright: </fo:inline>
+            <fo:inline font-family="DroidSans" font-weight="bold">Copyright: </fo:inline>
             <fo:inline>© 2015 Tung et al. This is an open
           access article distributed under the terms of the
           Creative Commons Attribution License, which permits
@@ -131,10 +131,10 @@
         </fo:block>
       </fo:block>
       <!-- body -->
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Introduction</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Overlapping offspring is an interesting phenomenon that occurs more commonly than originally thought, but the patterns, causes, and ecological and evolutionary consequences are not fully understood. When sites are reused for reproduction, the sites may be empty (if previous offspring have left) or may contain offspring from earlier reproduction. If offspring from previous reproduction remain, this results in two overlapping cohorts. Overlapping offspring are commonly found in many oviparous animals such as insects [</fo:inline>
         <fo:inline>1</fo:inline>
         <fo:inline>, </fo:inline>
@@ -167,7 +167,7 @@
         <fo:inline>19</fo:inline>
         <fo:inline>].</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>The parentage between overlapping offspring and nest users could lead to differences in reproductive strategy and nest site selection. When an adult reuses a nest occupied by a conspecific, it may contain genetically related or unrelated offspring. The former could be a case of nest-site fidelity [</fo:inline>
         <fo:inline>20</fo:inline>
         <fo:inline>, </fo:inline>
@@ -204,12 +204,12 @@
         <fo:inline>33</fo:inline>
         <fo:inline>].</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>In this study, we used a Taiwanese frog (</fo:inline>
         <fo:inline font-style="italic">Kurixalus eiffingeri</fo:inline>
         <fo:inline> (Anura: Rhacophoridae)) that breeds in water-filled bamboo stumps as a model animal to study the parentage between overlapping offspring and its ecological consequence on reproductive strategy and nest site selection. Specifically, we used (1) five microsatellite DNA markers to analyze the parentage of adults and tadpoles and (2) paired bamboo cups with and without tadpoles to study the nest choice of frogs and to reveal the possible causes of nest reuse.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Amplectant pairs of </fo:inline>
         <fo:inline font-style="italic">K</fo:inline>
         <fo:inline>. </fo:inline>
@@ -232,7 +232,7 @@
         <fo:inline>39</fo:inline>
         <fo:inline>]. Given that the timing of deposition of two egg clutches is separated temporally, we predicted that these breeding patterns (oviposition in egg- or tadpole-occupied stumps) represents different reproductive strategies; consequently, the parentage between the adults and the two cohorts of offspring is expected to be different.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Water pools in bamboo stumps, like other phytotelmata, are ephemeral habitats that are structurally simple and prone to desiccation, but the quality and availability of these reproductive resources vary in time and space [</fo:inline>
         <fo:inline>41</fo:inline>
         <fo:inline>–</fo:inline>
@@ -253,13 +253,13 @@
         <fo:inline>40</fo:inline>
         <fo:inline>]. However, the parentage between adults and tadpoles is unknown, thus the reproductive strategies cannot be determined. Given that the availability of breeding resources is limited and inter-clutch competition of tadpoles is severe, we predicted that if a stump is reused, it is most likely used by the same male or female frog because breeding sites are hard to locate and the familiarity of a nest site facilitates the reproductive success of the parents.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Materials and Methods</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Study site</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>We conducted experiments in the bamboo forests at Chitou in Nantou County, Taiwan. The average monthly temperature is 18 °C, and the total annual rainfall is about 3000 mm [</fo:inline>
         <fo:inline>46</fo:inline>
         <fo:inline>]. The rainy season is from February to September. Local farmers cut bamboo (</fo:inline>
@@ -272,16 +272,16 @@
         <fo:inline>46</fo:inline>
         <fo:inline>].</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Field Procedure</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Survey and sample collection of overlapping clutches</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>From March—August 2007–2009, we conducted field surveys to collect adults (males and/or females) and overlapping offspring (eggs and tadpoles) for parentage analyses. We first surveyed bamboo forests and located bamboo stumps containing tadpoles. We marked the stumps and monitored them if an egg clutch was found in the inner wall of stumps above the water line. We surveyed stumps every 3–7 d., dependent upon the breeding activity of frogs. Once an egg clutch was found in a tadpole-occupied stump, we collected all eggs and tadpoles about five days later and reared them in the laboratory in order to sample tissues for parentage analyses.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>We captured and toe-clipped attending male frogs and preserved the tissue individually in 95% ethanol. Feeding females were more difficult to capture because they return to the nest during the night at an interval of about eight days [</fo:inline>
         <fo:inline>37</fo:inline>
         <fo:inline>]. Nevertheless, from June 27 to August 31, 2009, we set up funnel traps on the opening of stumps to trap feeding females [</fo:inline>
@@ -294,7 +294,7 @@
         <fo:inline>37</fo:inline>
         <fo:inline>], and we could capture them while they were feeding the substitute tadpoles. Upon capture, we toe-clipped female frogs and preserved the tissue individually in 95% ethanol.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>In the laboratory, we incubated egg clutches separately on moist substrates until hatching. We reared tadpoles in beakers (ca. 1 L water) and fed them with chicken egg yolk once every 4 days until they reached metamorphosis. Chicken egg yolk is a good substitute for </fo:inline>
         <fo:inline font-style="italic">K</fo:inline>
         <fo:inline>. </fo:inline>
@@ -303,10 +303,10 @@
         <fo:inline>47</fo:inline>
         <fo:inline>]. When tadpoles reached Gosner stage 40, we clipped a distal portion of tadpoles’ tail (i.e., 10% or less of total tail length) and preserved tissues in 95% ethanol for parentage analyses.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Nest choice experiment</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>From April 17 to August 15, 2013, we conducted a manipulated experiment where paired bamboo cups, with and without tadpoles, were set up to investigate nest choice of frogs. First, we collected bamboo trunks which were cut by local farmers to thin the forest and sawed a section of trunk (i.e., an internode) which contains a septum at each end. We then sawed the middle of the internode which resulted in two identical bamboo cups and tied them to a bamboo stump (</fo:inline>
         <fo:inline>Fig 1</fo:inline>
         <fo:inline>). Bamboo stumps were covered by plastic sheet to prevent frogs from depositing eggs. We randomly designated one cup as the control and the other as the experimental group. A control group contained water only but the experimental group contained water and 5 tadpoles (Gosner stage 28–35). We filled the paired-bamboo cups with 7 cm of water [</fo:inline>
@@ -320,15 +320,15 @@
           <fo:external-graphic src="corpora/0123221/graphics/journal.pone.0123221.g001"/>
         </fo:block>
       </fo:block-container>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>We surveyed the paired-bamboo cups every 4 days. Once fertilized eggs were found on the inner wall of a bamboo cup above the water line, we recorded which cup was used and the clutch size. Subsequently, these paired-bamboo cups were no longer used for the rest of our experiment, and we usually set up new paired-bamboo cups in nearby bamboo forests. In each survey, we removed the tadpoles from the bamboo cups, fed them with raw chicken egg yolk in a water bowl, and returned them to bamboo cups after feeding [</fo:inline>
         <fo:inline>47</fo:inline>
         <fo:inline>]. If tadpoles reached metamorphic stages, Gosner stage 40 or older, we replaced them with younger tadpoles.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Genetic analyses on the parentage of tadpoles and adults</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Detailed methods on parentage analyses were reported by Chen et al [</fo:inline>
         <fo:inline>48</fo:inline>
         <fo:inline>]. Briefly, we used five polymorphic microsatellite loci (CEd12365, CEd15688, CEd19063, CEd13854, and CEd19091) to conduct parentage analyses [</fo:inline>
@@ -345,7 +345,7 @@
         <fo:inline>51</fo:inline>
         <fo:inline>] was used to analyze genetic relationships between the attending males, feeding females and the offspring in the nests.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Based on the results of the parentage analyses, we deduced the mating pattern of frogs (</fo:inline>
         <fo:inline>S1 Table</fo:inline>
         <fo:inline>). We defined (1) a synchronous polyandrous female as one which mates with multiple males at the same time [</fo:inline>
@@ -354,23 +354,23 @@
         <fo:inline>38</fo:inline>
         <fo:inline>]; (3) a sequential multi-mating event as a series of matings that occur within a short time, such as in a night or within a week. Each mating could be monogamous, polyandrous, or polygynous.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Also, based on the results of parentage analyses, we further assessed whether individuals that breed earlier in a stump would reuse the same stump again. For example, if the early-laid clutch is a result of mating by a male (A) and female (X) and the late-laid clutch by two males (A and B) and a female (Y), then we conclude that the tadpole-occupied stump was reused by the same male (i.e., A) but different females (i.e., X and Y). In contrast, if the early-laid clutch is a result of mating by two males (C and D) and a female (Z) and the late-laid clutch by a male (E) and female (Z), then we conclude that the tadpole-occupied stumps were reused by the different males (i.e., C, D, and E) but same female (i.e., Z).</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Statistical analyses</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>All statistical analyses of the data were performed with SAS [</fo:inline>
         <fo:inline>52</fo:inline>
         <fo:inline>]. We used a G test to assess the occurrence of stump use by frogs and proportion of nest reuse among sexes [</fo:inline>
         <fo:inline>53</fo:inline>
         <fo:inline>]. We used the Wilcoxon rank sum test to compare the clutch size of eggs laid in empty and tadpole-occupied stumps. Unless stated otherwise, we report the mean ± SD of each variable.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Ethic statement</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline font-style="italic">Kurixalus eiffingeri</fo:inline>
         <fo:inline> is not an endangered or protected species and thus no specific permission is needed for field studies. Some bamboo forests in Chitou are privately owned, and we had verbal permission from land owners (Mr. Pan Yeong-Sung and Ms Chen Mei-Chi) to conduct observational and field studies (23</fo:inline>
         <fo:inline vertical-align="super" font-size="8pt">o</fo:inline>
@@ -382,7 +382,7 @@
         <fo:inline vertical-align="super" font-size="8pt">o</fo:inline>
         <fo:inline>47’22.5” E, respectively).</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Institutional Animal Care and Use Committee (IACUC) of Tunghai University has specifically approved this study (Approval No. 100–19). We captured and toe-clipped attending males and feeding females and preserved the tissue individually in 95% ethanol for parentage analyses. Because only the most distal segment of the second toe was clipped, the toe-clipping is likely to have a minimal effect on the individual [</fo:inline>
         <fo:inline>48</fo:inline>
         <fo:inline>, </fo:inline>
@@ -395,13 +395,13 @@
         <fo:inline>48</fo:inline>
         <fo:inline>].</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Results</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Field observation and sample collection for parentage analyses</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>We located 64 bamboo stumps in total that contained eggs and tadpoles simultaneously (18, 19, and 27 stumps in 2007–2009, respectively). The average number of eggs (i.e., late-laid clutch) and tadpoles (i.e., early-laid clutch) found in the stumps was 44.3 ± 24.6 (range: 10–155) and 10.5 ± 7.7 (range: 2–37 tadpoles), respectively (</fo:inline>
         <fo:inline>Fig 2</fo:inline>
         <fo:inline>).</fo:inline>
@@ -411,13 +411,13 @@
           <fo:external-graphic src="corpora/0123221/graphics/journal.pone.0123221.g002"/>
         </fo:block>
       </fo:block-container>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>We selected 24 out of 64 stumps to conduct parentage analyses. The selected stumps consisted of at least one sampled adult (attending male and/or feeding females) and 6 tadpoles each from early- and late-laid clutches (12 tadpoles total). We analyzed a total of 301 and 451 samples from early- and late-laid clutches, respectively.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Parentage analyses</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>COLONY deduced eight different types of parentage among overlapping offspring (</fo:inline>
         <fo:inline>Table 1</fo:inline>
         <fo:inline>). The most common parentage among overlapping offspring was partially the same father and different mothers (</fo:inline>
@@ -430,280 +430,284 @@
         <fo:inline>S1 Table</fo:inline>
         <fo:inline>).</fo:inline>
       </fo:block>
-      <!-- table -->
-      <fo:block-container margin="0pt">
-        <fo:table width="100%">
+      <fo:block padding-left="9pt" border-left-style="solid" border-width="1.5pt">
+        <fo:block padding-top="6pt" padding-bottom="6pt" font-size="9pt">
+          <!-- caption -->
+          <!-- title -->
+          <fo:inline font-weight="bold">Parentage analyses of overlapping offspring of three consecutive years using COLONY.</fo:inline>
+          <!-- paragraph -->
+        </fo:block>
+        <fo:table width="100%" table-layout="fixed" padding-top="6pt">
           <!-- columns -->
-          <fo:table-column column-number="1" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="2" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="3" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="4" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="5" column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(2)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
           <!-- header -->
-          <fo:table-header line-height="15pt" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
+          <fo:table-header line-height="1.5" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
             <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Parentage</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2007</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2008</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2009</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
-                <fo:block text-align="left">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
+                <fo:block text-align="right">
                   <fo:inline>Subtotal</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
           </fo:table-header>
-          <!-- body -->
-          <fo:table-body font-size="8pt" line-height="12pt" text-align="left">
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+          <fo:table-body font-size="8pt" line-height="1.5" text-align="left">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Same tale an</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Same ♂ame tale ly same ♀</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Same ♂ameetale an ♀</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>3</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Partial same ♂arti ♀</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Partial same ♂ardifferent ♀</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>4</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>8</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Different ♂iffere ♀</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Different ♂ifferententaly ♀</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Different ♂iffe ♀</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>3</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>7</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0" border-color="gray" border-width="1pt" border-after-style="solid">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>4</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>6</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>14</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>24</fo:inline>
                 </fo:block>
@@ -711,18 +715,18 @@
             </fo:table-row>
           </fo:table-body>
         </fo:table>
-      </fo:block-container>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      </fo:block>
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Based on results of parentage among overlapping clutches, we found that a total of 14 stumps were reused by the same male frogs but 10 stumps were not, and the proportion of stump use is statistically similar (G test, G = 0.670, </fo:inline>
         <fo:inline font-style="italic">P</fo:inline>
         <fo:inline> = 0.413). On the other hand, a total of 6 stumps were reused by the same female frogs but 18 stumps were not, and the proportion of stump use was statistically different (G test, G = 6.279, </fo:inline>
         <fo:inline font-style="italic">P</fo:inline>
         <fo:inline> = 0.012).</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Nest choice experiment</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>We conducted 28 surveys, checking a total of 1862 cup pairs from April to August and found that 57 egg clutches were deposited during the study period (</fo:inline>
         <fo:inline>Table 2</fo:inline>
         <fo:inline>). Most egg clutches were found between May to July when the breeding activity peaked. A total of 34 and 23 egg clutches were laid in control and experimental bamboo cups, respectively, and the egg placement was independent from cup treatment (G test, G = 2.136, </fo:inline>
@@ -739,256 +743,260 @@
         <fo:inline font-style="italic">P</fo:inline>
         <fo:inline> = 0.508).</fo:inline>
       </fo:block>
-      <!-- table -->
-      <fo:block-container margin="0pt">
-        <fo:table width="100%">
+      <fo:block padding-left="9pt" border-left-style="solid" border-width="1.5pt">
+        <fo:block padding-top="6pt" padding-bottom="6pt" font-size="9pt">
+          <!-- caption -->
+          <!-- title -->
+          <fo:inline font-weight="bold">Survey effort and frequency of egg clutches laid in empty or tadpole-occupied cups.</fo:inline>
+          <!-- paragraph -->
+        </fo:block>
+        <fo:table width="100%" table-layout="fixed" padding-top="6pt">
           <!-- columns -->
-          <fo:table-column column-number="1" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="2" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="3" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="4" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="5" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="6" column-width="proportional-column-width(1)"/>
-          <fo:table-column column-number="7" column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
+          <fo:table-column column-width="proportional-column-width(2)"/>
+          <fo:table-column column-width="proportional-column-width(2)"/>
+          <fo:table-column column-width="proportional-column-width(2)"/>
+          <fo:table-column column-width="proportional-column-width(1)"/>
           <!-- header -->
-          <fo:table-header line-height="15pt" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
+          <fo:table-header line-height="1.5" font-size="8pt" text-align="left" font-weight="bold" border-color="gray" border-width="1.5pt" border-before-style="solid" border-after-style="solid">
             <fo:table-row>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Number of surveys per month</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Number of cup checked per survey</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Total number of cups checked per month</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Frequency of egg clutches laid in empty cups</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>Frequency of egg clutches laid in tadpole-occupied cups</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="7" number-rows-spanned="1" number-columns-spanned="1">
-                <fo:block text-align="left">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
+                <fo:block text-align="right">
                   <fo:inline>Subtotal egg clutches laid</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
           </fo:table-header>
-          <!-- body -->
-          <fo:table-body font-size="8pt" line-height="12pt" text-align="left">
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+          <fo:table-body font-size="8pt" line-height="1.5" text-align="left">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>April</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>2</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>34–56</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>90</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="7" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>May</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>6</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>47–77</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>364</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>6</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>4</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="7" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>10</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>June</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>7</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>71–78</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>526</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>15</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>7</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="7" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>22</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>July</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>9</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>62–77</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>608</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>11</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>12</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="7" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>23</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="1" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#E0E0E0">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>August</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="2" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>4</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="3" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>65–70</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>274</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>0</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="7" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1</fo:inline>
                 </fo:block>
               </fo:table-cell>
             </fo:table-row>
-            <fo:table-row>
-              <fo:table-cell column-number="4" number-rows-spanned="1" number-columns-spanned="1">
+            <fo:table-row text-indent="36pt" background-color="#F5F5F5" border-color="gray" border-width="1pt" border-after-style="solid">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>1862</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="5" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>34</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="6" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>23</fo:inline>
                 </fo:block>
               </fo:table-cell>
-              <fo:table-cell column-number="7" number-rows-spanned="1" number-columns-spanned="1">
+              <fo:table-cell number-rows-spanned="1" number-columns-spanned="1">
                 <fo:block text-align="left">
                   <fo:inline>57</fo:inline>
                 </fo:block>
@@ -996,14 +1004,14 @@
             </fo:table-row>
           </fo:table-body>
         </fo:table>
-      </fo:block-container>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      </fo:block>
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Discussion</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Multiple parentage of overlapping offspring</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Overlapping offspring is a reproductive situation with ecological and evolutionary implications. Attending male fishes [</fo:inline>
         <fo:inline>55</fo:inline>
         <fo:inline>, </fo:inline>
@@ -1038,7 +1046,7 @@
         <fo:inline>38</fo:inline>
         <fo:inline>] used microsatellite DNA markers to analyze parentage and showed that most overlapping egg clutches in a stump were a result of sequential breeding (or polygyny) of the attending male, providing direct evidence to support earlier predictions that attending anuran males can sire and care for multiple egg clutches in a single egg deposition site.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>In this study, </fo:inline>
         <fo:inline font-style="italic">K</fo:inline>
         <fo:inline>. </fo:inline>
@@ -1061,7 +1069,7 @@
         <fo:inline>3</fo:inline>
         <fo:inline>].</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>The casual mechanism(s) of the varied patterns of parentage in overlapping offspring in this study are yet to be clarified and are expected to be more complicated than that of overlapping egg clutches reported earlier. We speculate that the varied parentage patterns can at least be associated with two ecological factors: a lack of nest defense and limited breeding resources. </fo:inline>
         <fo:inline font-style="italic">Kurixalus eiffingeri</fo:inline>
         <fo:inline> has a unique “sequential” form of parental care: male frogs guard eggs during embryonic period, and female frogs feed tadpoles alone during larval period; however, there is no evidence of nest or mate defense. Nest defense is a common parental behavior among insects [</fo:inline>
@@ -1096,7 +1104,7 @@
         <fo:inline>40</fo:inline>
         <fo:inline>]. The competition for stumps (empty or tadpole-occupied) for breeding is heavy, which inevitably results in the reuse of tadpole-occupied stumps. This likely leads to a diverse pattern of parentage in the overlapping offspring.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>The lack of nest defense during the larval period by both parents comes as a surprise in light of the importance of the nest site and brood inside. Hom et al. [</fo:inline>
         <fo:inline>75</fo:inline>
         <fo:inline>] proposed a dynamic optimization model to predict the fitness consequences of nest defense, and one of the predictions is that nest defense would be minimal or lacking for species with small body size. </fo:inline>
@@ -1113,10 +1121,10 @@
         <fo:inline>46</fo:inline>
         <fo:inline>], thus, egg provisioning to tadpoles is a time consuming process. As a result, female frogs are forced to spend a large amount of time away from the nest foraging and producing trophic eggs to meet the energetic demands of their tadpoles.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Oviposition strategies when reusing a nest</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>Our findings that 58 and 25% of </fo:inline>
         <fo:inline font-style="italic">K</fo:inline>
         <fo:inline>. </fo:inline>
@@ -1157,7 +1165,7 @@
         <fo:inline>40</fo:inline>
         <fo:inline>], and the feeding cost is presumably lower.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>On the other hand, results of parentage analyses showed that about 42 and 75% of males and females respectively bred in tadpole-occupied stumps where tadpoles were genetically unrelated, which leads to the following question: why did frogs breed in the tadpole-occupied stumps of others? Lin, Lehtinen and Kam [</fo:inline>
         <fo:inline>40</fo:inline>
         <fo:inline>] reported that reuse of nests by </fo:inline>
@@ -1180,7 +1188,7 @@
         <fo:inline>40</fo:inline>
         <fo:inline>].</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>What are the possible benefits of reusing tadpole-occupied stumps? First, the presence of early-clutch tadpoles may serve as a cue for the high quality of the stumps, such as the availability and persistence of the water resource, which is particularly critical for offspring living in container habitats like tree holes and stumps which are prone to desiccation [</fo:inline>
         <fo:inline>24</fo:inline>
         <fo:inline>, </fo:inline>
@@ -1227,10 +1235,10 @@
         <fo:inline font-style="italic">scutatum</fo:inline>
         <fo:inline> were deserted less often compared to solitary nests, and the probability of catastrophic mortality was accordingly reduced.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Conclusions</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>In conclusion, integrating parentage into the discussion of nest site selection can lead to new insights into the reproductive strategies and sexual selection of animals. This is particularly true in the studies of reproductive behavior of externally fertilizing animals such as anuran amphibians and fishes because many species have complex reproductive behavior that cannot easily be detected in the field [</fo:inline>
         <fo:inline>13</fo:inline>
         <fo:inline>, </fo:inline>
@@ -1247,10 +1255,10 @@
         <fo:inline font-style="italic">eiffingeri</fo:inline>
         <fo:inline> may oviposit in egg- or tadpole-occupied stumps, both resulting in overlapping offspring. However, parentage data and field evidence suggest that oviposition in stumps occupied by either eggs or tadpoles should be seen as two different reproductive phenomena, most likely with different causal mechanisms. Oviposition in egg-occupied stumps is mostly initiated by attending males which probably attempt to compensate for the loss of reproductive opportunities while attending eggs. On the other hand, based on the results of the nest choice experiment in the field, the occurrence of oviposition in tadpole-occupied stumps cannot be fully explained by the habitat saturation hypothesis. We propose several hypotheses to explain the potential adaptive values of overlapping offspring. However, additional studies are necessary to fully understand the patterns revealed by this study.</fo:inline>
       </fo:block>
-      <fo:block font-size="9pt" font-family="DroidSans" font-weight="bold">
+      <fo:block font-family="DroidSans" font-size="10pt" font-weight="bold" padding-top="9pt">
         <fo:inline>Summaries of stump use, clutch size development stage, sample size used, and parentage of overlapping offspring deduced from the COLONY program.</fo:inline>
       </fo:block>
-      <fo:block font-family="Gentium" font-weight="normal" font-style="normal" font-size="9pt" line-height="2" text-indent="34pt">
+      <fo:block font-family="Gentium" padding="6pt" font-size="10pt" line-height="1.5">
         <fo:inline>(PDF)</fo:inline>
       </fo:block>
       <!-- back -->

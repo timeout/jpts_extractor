@@ -123,4 +123,8 @@ require 'teitofo/formatter/xml_formatter/document_elements/date'
 require 'teitofo/formatter/xml_formatter/document_elements/publication_info'
 require 'teitofo/formatter/xml_formatter/document_elements/copyright'
 require 'teitofo/formatter/xml_formatter/document_elements/conflict'
+require 'teitofo/formatter/xml_formatter/document_elements/table'
+require 'teitofo/formatter/xml_formatter/document_elements/caption'
+require 'teitofo/formatter/xml_formatter/document_elements/label'
+# require 'teitofo/formatter/xml_formatter/document_elements/section'
 

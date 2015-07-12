@@ -10,17 +10,18 @@ module TeiToFo
             'font-weight': 'bold',
             'font-style': 'italic'
           }) do
-            text.format(Text.new(self.xml))
+            Text.new(self.xml).format(section_title)
           end
         end
 
         def format_section_title(section_title)
-          self.xml.tag!('fo:inline', {
+          self.xml.tag!('fo:block', {
             'font-family': 'DroidSans',
             'font-size': '10pt',
             'font-weight': 'bold',
+            'padding-top': '9pt'
           }) do
-            text.format(Text.new(self.xml))
+            Text.new(self.xml).format(section_title)
           end
         end
 

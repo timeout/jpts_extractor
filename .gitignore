@@ -39,3 +39,5 @@ build/
 *.xml
 *.log
 *.pdf
+*.xsl
+*.fo

@@ -27,6 +27,7 @@ module TeiToFo
       end
 
       def to_s
+        "#{self.columns}\n#{self.header_rows}\n#{self.body_rows}"
       end
 
     end
