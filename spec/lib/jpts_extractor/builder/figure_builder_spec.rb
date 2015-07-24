@@ -8,7 +8,7 @@ RSpec.describe JPTSExtractor::Builder::FigureBuilder do
     it 'creates and assigns a graphics_path' do
       value = '10.1371/journal.pone.0033591.g001'
       builder.basename_path value
-      expect(builder.fig.graphic_basename.to_s).to eq('journal.pone.0033591.g001')
+      expect(builder.fig.graphic_path.to_s).to eq('journal.pone.0033591.g001')
     end
   end
 

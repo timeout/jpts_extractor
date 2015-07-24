@@ -21,7 +21,7 @@ module JPTSExtractor
       end
       
       def to_s
-        "#{self.graphic_basename}\n#{self.label}\n#{self.caption}"
+        "#{self.graphic_path}\n#{self.label}\n#{self.caption}"
       end
     end
   end

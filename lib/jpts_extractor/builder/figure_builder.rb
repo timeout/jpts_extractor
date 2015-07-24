@@ -15,15 +15,15 @@ module JPTSExtractor
       attr_reader :fig
 
       def basename_path(value)
-        Pathname.new(value).basename.to_s
+        self.fig.graphic_path = Pathname.new(value).basename.to_s
       end
 
       def label!
-        fig.label = self.text
+        self.fig.label = self.text
       end
 
       def caption= (caption)
-        fig.caption = caption
+        self.fig.caption = caption
       end
     end
   end

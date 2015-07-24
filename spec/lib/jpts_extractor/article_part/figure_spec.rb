@@ -8,14 +8,14 @@ RSpec.describe JPTSExtractor::ArticlePart::Figure do
 
   describe '#graphic_basename' do
     it 'gets and sets a graphic basename' do
-      figure.graphic_basename = 'journal.pone.0033591.g001'
-      expect(figure.graphic_basename).to eq('journal.pone.0033591.g001')
+      figure.graphic_path = 'journal.pone.0033591.g001'
+      expect(figure.graphic_path).to eq('journal.pone.0033591.g001')
     end
 
     it 'has a graphic_basename' do
-      expect(figure.graphic_basename?).to be_falsey
-      figure.graphic_basename = 'journal.pone.0033591.g001'
-      expect(figure.graphic_basename?).to be_truthy
+      expect(figure.graphic_path?).to be_falsey
+      figure.graphic_path = 'journal.pone.0033591.g001'
+      expect(figure.graphic_path?).to be_truthy
     end
   end
 

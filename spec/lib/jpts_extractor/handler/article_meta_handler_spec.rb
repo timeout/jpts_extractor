@@ -35,18 +35,12 @@ RSpec.describe JPTSExtractor::Handler::ArticleMetaHandler do
         subhandler.on_text( subject ) 
         subhandler.on_end_element :subject
 
-        expect(subhandler.builder.article_meta.subject).to eq( subject.upcase )
+        expect(subhandler.builder.article_meta.subject).to eq( subject )
       end
     end
   end
 
   describe '== article title ==' do
-    describe '#on_start_element' do
-      it 'switches on text' do
-        subhandler.on_start_element :'article-title'
-        expect(subhandler.text?).to be_truthy
-      end
-    end
 
     describe '#on_end_element' do
       let(:article_title) { 'Easy Peasy Citations' }
@@ -60,7 +54,7 @@ RSpec.describe JPTSExtractor::Handler::ArticleMetaHandler do
         subhandler.on_start_element :'article-title'
         subhandler.on_text article_title
         subhandler.on_end_element :'article-title'
-        expect(subhandler.builder.article_meta.article_title).to eq( article_title.capitalize )
+        expect(subhandler.builder.article_meta.article_title.to_s).to eq( article_title )
       end
     end
   end

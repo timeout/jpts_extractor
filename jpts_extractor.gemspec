@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'colorize', '~> 0.7.7', '>=0.7.7'
 
   spec.add_development_dependency "rspec", "~> 3.2"
+  spec.add_development_dependency "factory_girl", "~> 4.5.0", '>=4.5.0'
 end

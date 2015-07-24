@@ -24,7 +24,7 @@ RSpec.describe JPTSExtractor::Handler::FigureHandler do
       subhandler.on_text '10.1371/journal.pone.0033591.g001'
       subhandler.on_end_element :'object-id'
       figure = subhandler.builder.fig
-      expect(figure.graphic_basename.to_s).to eq('journal.pone.0033591.g001')
+      expect(figure.graphic_path.to_s).to eq('journal.pone.0033591.g001')
     end
   end
 
