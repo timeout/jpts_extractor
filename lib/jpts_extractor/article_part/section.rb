@@ -19,6 +19,7 @@ module JPTSExtractor
         self.depth += 1
       end
 
+      # a block is any block element: text, table, figure, (sub-)section
       def add_block(article_block)
         @blocks << article_block
       end
@@ -28,8 +29,21 @@ module JPTSExtractor
         @blocks.size
       end
 
-      def each(&block)
-        @blocks.each(&block)
+      def each
+        if block_given?
+          @blocks.each { |block| yield block }
+        else
+          @blocks.enum_for
+        end
+      end
+
+      def map_text!
+        @blocks.map! do |block|
+          if block.is_a? Text
+            yield(block)
+          end
+        end
+        self
       end
 
       def format(section_formatter)
