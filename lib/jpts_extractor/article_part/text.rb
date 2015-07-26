@@ -5,14 +5,19 @@ module JPTSExtractor
     class Text
       include Enumerable
 
-      attr_reader :fragments
-
       def fragments?
-        not self.fragments.nil?
+        not @fragments.nil?
+      end
+
+      def fragments
+        @fragments ||= Array.new
+      end
+
+      def fragments= (fragments)
+        @fragments = fragments
       end
 
       def add_fragment(inline_text)
-        self.fragments ||= Array.new
         self.fragments << inline_text
         self
       end
@@ -38,8 +43,6 @@ module JPTSExtractor
         words.join(' ')
       end
 
-      private
-      attr_writer :fragments
     end
   end
 end

@@ -52,7 +52,7 @@ RSpec.describe JPTSExtractor::ArticlePart::Section do
         .add_fragment(contents)
       section.add_block text
       section.add_block text.dup
-      section.each do |sec|
+      section.each(section) do |sec|
         expect(sec.to_s).to eq('This is some important bold text')
       end
     end
@@ -63,7 +63,7 @@ RSpec.describe JPTSExtractor::ArticlePart::Section do
       block_stub = double('Block')
       allow(block_stub).to receive_messages(format: 'output')
       section.add_block(block_stub)
-      section.each do |sec|
+      section.each(section) do |sec|
         expect sec.respond_to? :format
       end
     end
