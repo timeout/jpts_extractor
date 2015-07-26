@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+
+require 'jpts_extractor'
+
+require 'pathname'
+
+# JPTSFormatter::Cli::Application.start(ARGV)
+
+def read_file(io, lines)
+  io.readlines.each { |line| lines << line.chomp }
+end
+
+=begin
+  jpts_extractor <input> <output>
+  jpts_extractor <output>             # input STDIN
+  jpts_extractor <input> -            # output STDOUT
+  jpts_extractor                      # pass through aka STDIN → STDOUT
+=end
+
+if ARGV.empty?
+  STDOUT.puts JPTSExtractor.output(STDIN)
+  exit
+end
+
+case ARGV.size
+when 1
+  output_filename = ARGV[0]
+  output_path = Pathname(output_filename)
+  output_path.open('w') { |f| f.write(JPTSExtractor.output(STDIN)) }
+when 2
+  input_filename = ARGV[0]
+  input_path = Pathname.new(input_filename)
+
+  output_filename = ARGV[1]
+  output_path = Pathname.new(output_filename)
+
+  output = JPTSExtractor.output(input_path.open)
+  output_path.open('w') { |f| f.write output }
+else
+  puts "usage information"
+end

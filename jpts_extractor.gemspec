@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.description          = 'An article deserializer for the Journal Publishing Tag Set format'
 
   spec.files                = FileList['lib/**/*.rb']
+  spec.executables          = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_path         = 'lib'
   spec.platform             = Gem::Platform::RUBY
   spec.rubyforge_project    = '[none]'
@@ -18,6 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'ox', '~> 2.2.0', '>=2.2.0'
   spec.add_dependency 'colorize', '~> 0.7.7', '>=0.7.7'
+  spec.add_dependency 'builder', '~> 3.2.2', '>=3.2.2'
 
   spec.add_development_dependency "rspec", "~> 3.2"
   spec.add_development_dependency "factory_girl", "~> 4.5.0", '>=4.5.0'
