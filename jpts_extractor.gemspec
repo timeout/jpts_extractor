@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.description          = 'An article deserializer for the Journal Publishing Tag Set format'
 
   spec.files                = FileList['lib/**/*.rb']
+  spec.bindir               = "exe"
   spec.executables          = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_path         = 'lib'
   spec.platform             = Gem::Platform::RUBY
