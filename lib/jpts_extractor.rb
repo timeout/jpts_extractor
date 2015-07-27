@@ -16,6 +16,7 @@ module JPTSExtractor
   def self.output(article)
     # article = JPTSExtractor.extract(io)
     formatter = JPTSExtractor::XML::Article.new
+
     article.format(formatter)
     formatter.xml.target!
   end

@@ -18,7 +18,8 @@ end
 =end
 
 if ARGV.empty?
-  STDOUT.puts JPTSExtractor.output(STDIN)
+  article = JPTSExtractor.extract(STDIN)
+  STDOUT.puts JPTSExtractor.output article
   exit
 end
 
@@ -26,7 +27,8 @@ case ARGV.size
 when 1
   output_filename = ARGV[0]
   output_path = Pathname(output_filename)
-  output_path.open('w') { |f| f.write(JPTSExtractor.output(STDIN)) }
+  article = JPTSExtractor.extract(STDIN)
+  output_path.open('w') { |f| f.write(JPTSExtractor.output(article)) }
 when 2
   input_filename = ARGV[0]
   input_path = Pathname.new(input_filename)
@@ -34,7 +36,8 @@ when 2
   output_filename = ARGV[1]
   output_path = Pathname.new(output_filename)
 
-  output = JPTSExtractor.output(input_path.open)
+  article = JPTSExtractor.extract(input_path.open)
+  output = JPTSExtractor.output(article)
   output_path.open('w') { |f| f.write output }
 else
   puts "usage information"
