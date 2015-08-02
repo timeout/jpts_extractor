@@ -26,6 +26,7 @@ module JPTSExtractor
         when :source
           switch_text_on
           self.builder.text!
+          @state = :source
         when :name
           @name = Name.new
           @name.type = @name_type.to_sym if @name_type
@@ -45,6 +46,7 @@ module JPTSExtractor
         when :source
           self.builder.source!
           switch_text_off
+          @state = nil
         when :volume
           builder.volume = @text.dup
           switch_text_off
@@ -98,6 +100,7 @@ module JPTSExtractor
 
       def on_text(value)
         @text = value if text?
+        self.builder.create_fragment(value, event_stack) if @state == :source
       end
 
     end

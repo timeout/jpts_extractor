@@ -77,7 +77,8 @@ RSpec.describe JPTSExtractor::Handler::RefHandler do
         subhandler.on_start_element :source
         subhandler.on_text('PLoS Medicine')
         subhandler.on_end_element :source
-        expect(subhandler.builder.ref.source).to eq 'PLoS Medicine'
+        text_block = subhandler.builder.ref.source
+        expect(text_block.to_s).to eq 'PLoS Medicine'
       end
     end
   end

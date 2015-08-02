@@ -35,8 +35,11 @@ RSpec.describe JPTSExtractor::Builder::RefBuilder do
 
     describe '#source=' do
       it 'builds a source' do
-        builder.source = source
-        expect(builder.ref.source).to eq(source)
+        builder.text!
+        builder.create_fragment('Music,', [])
+        builder.create_fragment('Culture!', [:italic])
+        builder.source!
+        expect(builder.ref.source.to_s).to eq("Music, Culture!")
       end
     end
 
