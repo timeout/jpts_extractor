@@ -17,7 +17,7 @@ module JPTSExtractor
       end
 
       def source!
-        self.ref.title = self.text
+        self.ref.source = self.text
       end
 
       def article_title= (article_title)
