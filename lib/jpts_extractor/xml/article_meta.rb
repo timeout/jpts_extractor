@@ -42,8 +42,8 @@ module JPTSExtractor
             self.xml.tag!('aff', {
               id: "aff#{index += 1}"
             }) do
-              self.xml.tag!('label', {}, "#{index += 1}")
-              self.xml.tag!('addr-line', {}, "#{affiliation}")
+              self.xml.tag!('label', {}, "#{affiliation.label}")
+              self.xml.tag!('addr-line', {}, "#{affiliation.addr}")
             end
           end
 
