@@ -1,4 +1,5 @@
 require 'jpts_extractor/article_part/ref'
+require 'jpts_extractor/xml/text'
 
 require 'builder'                                                       
 
@@ -49,7 +50,7 @@ module JPTSExtractor
             end if reference.editor_names?
             # self.xml.tag!('source', {}, reference.source) if reference.source?
             self.xml.tag!('source') do 
-              Text.format(reference.source)
+              Text.new(self.xml).format(reference.source)
             end if reference.source?
             self.xml.tag!('article-title', {}, reference.article_title) if reference.article_title?
             self.xml.tag!('chapter-title', {}, reference.chapter_title) if reference.chapter_title?
