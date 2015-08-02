@@ -23,6 +23,9 @@ module JPTSExtractor
         when :'article-title'
           self.builder.text!
           @state = :title
+        when :'alt-title'
+          self.builder.text!
+          @state = :alt_title
         when :p
           self.builder.text!
         end
@@ -36,6 +39,10 @@ module JPTSExtractor
           switch_text_off
         when :'article-title'
           self.builder.article_title! if self.state == :title
+          switch_text_off
+          @state = nil
+        when :'alt-title'
+          self.builder.alt_title!
           switch_text_off
           @state = nil
         when :fn
@@ -99,7 +106,9 @@ module JPTSExtractor
       end
 
       def on_text(value)
-        self.builder.create_fragment(value, event_stack) if [:con, :conflict, :title].include? self.state
+        if [:con, :conflict, :title, :alt_title].include? self.state
+          self.builder.create_fragment(value, event_stack) 
+        end
         @text = value if text?
       end
 

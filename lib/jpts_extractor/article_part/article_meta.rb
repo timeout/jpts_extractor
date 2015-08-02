@@ -8,7 +8,7 @@ module JPTSExtractor
 
       attr_accessor :subject, :article_title, :abstract, :conflict, 
         :conceived, :published_date, :received_date, :accepted_date,
-        :copyright_year, :copyright_holder, :authors
+        :copyright_year, :copyright_holder, :authors, :alt_title
 
       def each_author(&block)
         @authors.each(&block)

@@ -21,15 +21,19 @@ module JPTSExtractor
         :surname, :given_names, :aff_label, :aff_addr_line
 
       def subject= (subject)
-        @article_meta.subject = subject
+        self.article_meta.subject = subject
       end
 
       def article_title!
-        @article_meta.article_title = self.text
+        self.article_meta.article_title = self.text
+      end
+
+      def alt_title!
+        self.article_meta.alt_title = self.text
       end
 
       def abstract= (abstract)
-        @article_meta.abstract = abstract
+        self.article_meta.abstract = abstract
       end
 
       def conflict!
@@ -41,27 +45,27 @@ module JPTSExtractor
       end
 
       def copyright_year= (year)
-        @article_meta.copyright_year = year
+        self.article_meta.copyright_year = year
       end
 
       def copyright_holder= (holder)
-        @article_meta.copyright_holder = holder
+        self.article_meta.copyright_holder = holder
       end
 
       def build_pub_date
-        @article_meta.published_date = Date.new(@pub_date_year,
+        self.article_meta.published_date = Date.new(@pub_date_year,
                                           @pub_date_month,
                                           @pub_date_day)
       end
 
       def build_recv_date
-        @article_meta.received_date = Date.new(@recv_date_year,
+        self.article_meta.received_date = Date.new(@recv_date_year,
                                           @recv_date_month,
                                           @recv_date_day)
       end
 
       def build_accept_date
-        @article_meta.accepted_date = Date.new(@accept_date_year,
+        self.article_meta.accepted_date = Date.new(@accept_date_year,
                                           @accept_date_month,
                                           @accept_date_day)
       end
@@ -79,11 +83,11 @@ module JPTSExtractor
       end
 
       def build_authors
-        @article_meta.authors = @authors
+        self.article_meta.authors = @authors
       end
 
       def build_affiliation
-        @article_meta.add_affiliation(
+        self.article_meta.add_affiliation(
           ArticlePart::Affiliation.new(@aff_label, @aff_addr_line))
       end
 
