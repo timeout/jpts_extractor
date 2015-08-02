@@ -9,12 +9,11 @@ require 'pathname'
 module JPTSExtractor
   def self.extract(io)
     handler = Handler::Handler.new
-    Ox.sax_parse(handler, io)
+    Ox.sax_parse(handler, io, convert_special: true)
     handler.article
   end
 
   def self.output(article)
-    # article = JPTSExtractor.extract(io)
     formatter = JPTSExtractor::XML::Article.new
 
     article.format(formatter)

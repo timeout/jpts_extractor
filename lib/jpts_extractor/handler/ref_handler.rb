@@ -19,9 +19,13 @@ module JPTSExtractor
         case name
         when :'element-citation', :'mixed-citation', :'person-group'
           switch_attr_on
-        when :'article-title', :volume, :source, :'article-title', 
-          :year, :month, :day, :fpage, :lpage, :issue
+        when :'article-title', :volume, :'chapter-title',
+          :year, :month, :day, :fpage, :lpage, :issue, :'publisher-loc',
+          :'publisher-name'
           switch_text_on
+        when :source
+          switch_text_on
+          self.builder.text!
         when :name
           @name = Name.new
           @name.type = @name_type.to_sym if @name_type
@@ -39,13 +43,16 @@ module JPTSExtractor
         when :'element-citation', :'mixed-citation'
           switch_attr_off
         when :source
-          builder.source = @text.dup
+          self.builder.source!
           switch_text_off
         when :volume
           builder.volume = @text.dup
           switch_text_off
         when :'article-title'
           builder.article_title = @text.dup
+          switch_text_off
+        when :'chapter-title'
+          builder.chapter_title = @text.dup
           switch_text_off
         when :year
           builder.year = @text.dup
@@ -64,6 +71,12 @@ module JPTSExtractor
           switch_text_off
         when :issue
           builder.issue = @text.dup
+          switch_text_off
+        when :'publisher-loc'
+          builder.publisher_loc = @text.dup
+          switch_text_off
+        when :'publisher-name'
+          builder.publisher_name = @text.dup
           switch_text_off
         when :surname
           @name.name.surname = @text.dup

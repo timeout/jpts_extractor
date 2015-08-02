@@ -8,7 +8,7 @@ module JPTSExtractor
       attr_reader :given_names, :surname, :refs
 
       def each_ref(&block)
-        @refs.each(&block)
+        self.refs.each(&block) unless self.refs.nil?
       end
 
       def format(author_formatter)

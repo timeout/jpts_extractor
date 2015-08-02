@@ -29,7 +29,7 @@ module JPTSExtractor
             }) do
               self.xml.tag!('sup', {}, ref)
             end
-          end
+          end unless author.refs.nil?
         end
       end
 

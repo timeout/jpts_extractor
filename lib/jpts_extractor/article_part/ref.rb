@@ -2,8 +2,9 @@ module JPTSExtractor
   module ArticlePart
     class Ref
 
-      attr_accessor :publication_type, :source, :article_title, :volume,
-        :year, :month, :day, :fpage, :lpage, :editor_names, :author_names, :issue
+      attr_accessor :publication_type, :chapter_title, :source, :article_title, :volume,
+        :year, :month, :day, :fpage, :lpage, :editor_names, :author_names, :issue,
+        :publisher_loc, :publisher_name
 
       def source?
         not self.source.nil?
@@ -11,6 +12,10 @@ module JPTSExtractor
 
       def article_title?
         not self.article_title.nil?
+      end
+
+      def chapter_title?
+        not self.chapter_title.nil?
       end
 
       def volume?
@@ -39,6 +44,14 @@ module JPTSExtractor
 
       def issue?
         not self.issue.nil?
+      end
+
+      def publisher_loc?
+        not self.publisher_loc.nil?
+      end
+
+      def publisher_name?
+        not self.publisher_name.nil?
       end
 
       def add_editor_name(name)

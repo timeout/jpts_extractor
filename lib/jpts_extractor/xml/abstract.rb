@@ -1,4 +1,5 @@
 require 'jpts_extractor/article_part/abstract'
+require 'jpts_extractor/xml/text'
 
 require 'builder'                                                       
 
@@ -15,7 +16,9 @@ module JPTSExtractor
       def format(abstract)
         self.xml.tag!('abstract') do
           if abstract.title?
-            self.xml.tag!('title', {}, "#{abstract.title}")
+            self.xml.tag!('title') do
+              Text.format(abstrac.title)
+            end
           end
 
           if abstract.paragraph?
