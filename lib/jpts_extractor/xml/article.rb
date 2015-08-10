@@ -1,5 +1,4 @@
 require 'jpts_extractor/article'
-
 require 'jpts_extractor/xml/front'                                
 require 'jpts_extractor/xml/body'                                 
 require 'jpts_extractor/xml/back'                                 

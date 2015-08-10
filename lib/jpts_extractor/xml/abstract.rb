@@ -17,7 +17,7 @@ module JPTSExtractor
         self.xml.tag!('abstract') do
           if abstract.title?
             self.xml.tag!('title') do
-              Text.format(abstrac.title)
+              Text.new(self.xml).format(abstract.title)
             end
           end
 
