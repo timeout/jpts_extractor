@@ -10,7 +10,7 @@ module JPTSExtractor
         @str = String.new
       end
 
-      attr_accessor :str
+      attr_writer :str
 
       def format(article)
         article_meta_formatter = ArticleMeta.new(self.str)
@@ -26,6 +26,13 @@ module JPTSExtractor
         self.str = back_formatter.str
       end
 
+      def str
+        @str
+          .gsub(/\(\s+/, '(')
+          .gsub(/\s+\)/, ')')
+          .gsub(/\s+\./, '.')
+          .gsub(/\s+;./, ';')
+      end
     end
   end
 end

@@ -28,5 +28,5 @@ module JPTSExtractor
   end
 end
 
-article  = JPTSExtractor.extract(File.open('spec/fixture/0123221.xml'))
-puts JPTSExtractor.text(article)
+# article  = JPTSExtractor.extract(File.open('spec/fixture/0123221.xml'))
+# puts JPTSExtractor.text(article)

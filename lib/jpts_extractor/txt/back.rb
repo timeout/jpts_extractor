@@ -1,4 +1,5 @@
 require 'jpts_extractor/article_part/back'
+require 'jpts_extractor/article_part/acknowledge'
 
 module JPTSExtractor
   module Txt
@@ -10,18 +11,22 @@ module JPTSExtractor
       attr_accessor :str
 
       def format(back)
-        @str +=  "#{back.acknowledge.label}\n " if back.acknowledge.label?
-        @str += "#{back.acknowledge.title}\n\n" if back.acknowledge.title?
-        @str += "#{back.acknowledge.paragraph}\n\n" if back.acknowledge.paragraph?
+        if back.acknowledge?
+          @str += "#{back.acknowledge.label}\n " if back.acknowledge.label?
+          @str += "#{back.acknowledge.title}\n\n" if back.acknowledge.title?
+          @str += "#{back.acknowledge.paragraph}\n\n" if back.acknowledge.paragraph?
+          back.acknowledge.sections.each do |section|
+            section.each(section) do |subsection|
+              if subsection.is_a? JPTSExtractor::ArticlePart::Text
+                @str += "#{subsection}\n\n" 
+              end
+            end
+          end if back.acknowledge.sections?
+        end
 
-        back.acknowledge.sections.each do |section|
-          section.each(section) do |subsection|
-            @str += "#{subsection}\n\n" if subsection.is_a? JPTSExtractor::ArticlePart::Text
-          end
-        end if back.acknowledge.sections?
-
+        @str += "References\n\n"
         back.ref_list.each_with_index do |reference, index|
-          @str += "#{index}. " 
+          @str += "#{index + 1}. " 
 
           if reference.author_names?
             authors = reference.author_names.map do |name|
